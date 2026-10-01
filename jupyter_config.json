@@ -9,5 +9,13 @@
   "VoilaExecutor": {
     "timeout": 300,
     "show_tracebacks": false
+  },
+  "ExecutePreprocessor": {
+    "skip_cells_with_tag": "skip-execution",
+    "timeout": 300
+  },
+  "NotebookClient": {
+    "skip_cells_with_tag": "skip-execution",
+    "timeout": 300
   }
 }
