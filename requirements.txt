@@ -1,5 +1,6 @@
 numpy>=1.23
 pandas>=1.5
+networkx>=3.0
 plotly>=5.0
 ipywidgets>=8.0
 anywidget>=0.9

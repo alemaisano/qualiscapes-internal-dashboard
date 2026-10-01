@@ -1,0 +1,104 @@
+code_a,code_b,cooccurrence,sentiment_a,sentiment_b,indicator_a,indicator_b,stop
+● appropriation_publicness_negative,● crossability_negative,1,negative,negative,appropriation_publicness,crossability,After Via dei Colli / Before Mezzaro
+● accessibility_positive,● continuity_neutral,1,positive,neutral,accessibility,continuity,"Chiesa, Via San Gottardo"
+● accessibility_positive,● environment_negative,1,positive,negative,accessibility,environment,"Chiesa, Via San Gottardo"
+● appropriation_publicness_negative,● continuity_negative,1,negative,negative,appropriation_publicness,continuity,"Chiesa, Via San Gottardo"
+● appropriation_publicness_negative,● interactions/vitality_negative,1,negative,negative,appropriation_publicness,interactions/vitality,"Chiesa, Via San Gottardo"
+● beauty_negative,● continuity_negative,2,negative,negative,beauty,continuity,"Chiesa, Via San Gottardo"
+● coherence_negative,● continuity_negative,1,negative,negative,coherence,continuity,"Chiesa, Via San Gottardo"
+● continuity_negative,● cultural heritage_negative,1,negative,negative,continuity,cultural heritage,"Chiesa, Via San Gottardo"
+● continuity_negative,● environment_negative,2,negative,negative,continuity,environment,"Chiesa, Via San Gottardo"
+● continuity_negative,● interactions/vitality_negative,1,negative,negative,continuity,interactions/vitality,"Chiesa, Via San Gottardo"
+● continuity_neutral,● environment_negative,2,neutral,negative,continuity,environment,"Chiesa, Via San Gottardo"
+● continuity_neutral,● familiarity_positive,2,neutral,positive,continuity,familiarity,"Chiesa, Via San Gottardo"
+● continuity_neutral,● interactions/vitality_negative,1,neutral,negative,continuity,interactions/vitality,"Chiesa, Via San Gottardo"
+● environment_negative,● safety_comfort_negative,2,negative,negative,environment,safety_comfort,"Chiesa, Via San Gottardo"
+● familiarity_positive,● interactions/vitality_positive,1,positive,positive,familiarity,interactions/vitality,"Chiesa, Via San Gottardo"
+● appropriation_publicness_negative,● safety_comfort_negative,1,negative,negative,appropriation_publicness,safety_comfort,Crocifisso
+● coherence_negative,● complexity_negative,1,negative,negative,coherence,complexity,Crocifisso
+● coherence_negative,● continuity_negative,1,negative,negative,coherence,continuity,Crocifisso
+● coherence_negative,● crossability_negative,1,negative,negative,coherence,crossability,Crocifisso
+● coherence_negative,● safety_comfort_negative,1,negative,negative,coherence,safety_comfort,Crocifisso
+● complexity_negative,● continuity_negative,1,negative,negative,complexity,continuity,Crocifisso
+● complexity_negative,● safety_comfort_negative,1,negative,negative,complexity,safety_comfort,Crocifisso
+● continuity_negative,● crossability_negative,1,negative,negative,continuity,crossability,Crocifisso
+● continuity_negative,● cultural heritage_negative,3,negative,negative,continuity,cultural heritage,Crocifisso
+● familiarity_positive,● nature_positive,1,positive,positive,familiarity,nature,Crocifisso
+● ambience_positive,● familiarity_positive,1,positive,positive,ambience,familiarity,Mulino San Martino / Parco Vicolo della Roggia
+● ambience_positive,● nature_positive,1,positive,positive,ambience,nature,Mulino San Martino / Parco Vicolo della Roggia
+● appropriation_publicness_negative,● safety_comfort_negative,1,negative,negative,appropriation_publicness,safety_comfort,Mulino San Martino / Parco Vicolo della Roggia
+● interactions/vitality_positive,● safety_comfort_negative,1,positive,negative,interactions/vitality,safety_comfort,Mulino San Martino / Parco Vicolo della Roggia
+● accessibility_positive,● nature_positive,2,positive,positive,accessibility,nature,Navegna Lago
+● ambience_positive,● nature_positive,5,positive,positive,ambience,nature,Navegna Lago
+● appropriation_publicness_negative,● coherence_negative,1,negative,negative,appropriation_publicness,coherence,Navegna Lago
+● appropriation_publicness_negative,● continuity_negative,1,negative,negative,appropriation_publicness,continuity,Navegna Lago
+● beauty_negative,● coherence_negative,2,negative,negative,beauty,coherence,Navegna Lago
+● beauty_negative,● continuity_negative,1,negative,negative,beauty,continuity,Navegna Lago
+● beauty_negative,● nature_positive,1,negative,positive,beauty,nature,Navegna Lago
+● coherence_negative,● continuity_negative,4,negative,negative,coherence,continuity,Navegna Lago
+● coherence_negative,● nature_positive,1,negative,positive,coherence,nature,Navegna Lago
+● continuity_negative,● environment_negative,1,negative,negative,continuity,environment,Navegna Lago
+● continuity_negative,● nature_positive,3,negative,positive,continuity,nature,Navegna Lago
+● continuity_negative,● safety_comfort_negative,1,negative,negative,continuity,safety_comfort,Navegna Lago
+● nature_positive,● safety_comfort_negative,1,positive,negative,nature,safety_comfort,Navegna Lago
+● accessibility_positive,● nature_positive,2,positive,positive,accessibility,nature,"Panorama, Via dei Colli"
+● ambience_positive,● interactions/vitality_positive,2,positive,positive,ambience,interactions/vitality,"Panorama, Via dei Colli"
+● appropriation_publicness_negative,● continuity_negative,1,negative,negative,appropriation_publicness,continuity,"Panorama, Via dei Colli"
+● appropriation_publicness_negative,● crossability_negative,1,negative,negative,appropriation_publicness,crossability,"Panorama, Via dei Colli"
+● appropriation_publicness_negative,● interactions/vitality_negative,2,negative,negative,appropriation_publicness,interactions/vitality,"Panorama, Via dei Colli"
+● beauty_negative,● coherence_negative,1,negative,negative,beauty,coherence,"Panorama, Via dei Colli"
+● beauty_negative,● continuity_negative,2,negative,negative,beauty,continuity,"Panorama, Via dei Colli"
+● beauty_negative,● continuity_neutral,1,negative,neutral,beauty,continuity,"Panorama, Via dei Colli"
+● coherence_negative,● crossability_negative,1,negative,negative,coherence,crossability,"Panorama, Via dei Colli"
+● coherence_negative,● familiarity_positive,1,negative,positive,coherence,familiarity,"Panorama, Via dei Colli"
+● continuity_negative,● continuity_neutral,1,negative,neutral,continuity,continuity,"Panorama, Via dei Colli"
+● continuity_negative,● interactions/vitality_negative,3,negative,negative,continuity,interactions/vitality,"Panorama, Via dei Colli"
+● continuity_negative,● interactions/vitality_positive,1,negative,positive,continuity,interactions/vitality,"Panorama, Via dei Colli"
+● continuity_negative,● safety_comfort_negative,2,negative,negative,continuity,safety_comfort,"Panorama, Via dei Colli"
+● environment_negative,● safety_comfort_negative,1,negative,negative,environment,safety_comfort,"Panorama, Via dei Colli"
+● accessibility_positive,● ambience_positive,2,positive,positive,accessibility,ambience,Ponte Navegna
+● ambience_positive,● familiarity_positive,1,positive,positive,ambience,familiarity,Ponte Navegna
+● ambience_positive,● interactions/vitality_negative,1,positive,negative,ambience,interactions/vitality,Ponte Navegna
+● ambience_positive,● nature_positive,2,positive,positive,ambience,nature,Ponte Navegna
+● beauty_negative,● coherence_negative,5,negative,negative,beauty,coherence,Ponte Navegna
+● beauty_negative,● continuity_negative,3,negative,negative,beauty,continuity,Ponte Navegna
+● beauty_negative,● environment_negative,1,negative,negative,beauty,environment,Ponte Navegna
+● coherence_negative,● complexity_negative,2,negative,negative,coherence,complexity,Ponte Navegna
+● coherence_negative,● continuity_negative,7,negative,negative,coherence,continuity,Ponte Navegna
+● coherence_negative,● continuity_neutral,1,negative,neutral,coherence,continuity,Ponte Navegna
+● coherence_negative,● environment_negative,3,negative,negative,coherence,environment,Ponte Navegna
+● coherence_negative,● interactions/vitality_negative,1,negative,negative,coherence,interactions/vitality,Ponte Navegna
+● coherence_negative,● nature_positive,2,negative,positive,coherence,nature,Ponte Navegna
+● coherence_negative,● safety_comfort_negative,2,negative,negative,coherence,safety_comfort,Ponte Navegna
+● complexity_negative,● continuity_negative,1,negative,negative,complexity,continuity,Ponte Navegna
+● continuity_negative,● environment_negative,3,negative,negative,continuity,environment,Ponte Navegna
+● continuity_negative,● safety_comfort_negative,1,negative,negative,continuity,safety_comfort,Ponte Navegna
+● environment_negative,● familiarity_positive,1,negative,positive,environment,familiarity,Ponte Navegna
+● environment_negative,● safety_comfort_negative,4,negative,negative,environment,safety_comfort,Ponte Navegna
+● familiarity_positive,● interactions/vitality_positive,1,positive,positive,familiarity,interactions/vitality,Ponte Navegna
+● continuity_neutral,● interactions/vitality_positive,1,neutral,positive,continuity,interactions/vitality,"Scuola Elementare, Via Frizzi"
+● familiarity_positive,● interactions/vitality_positive,1,positive,positive,familiarity,interactions/vitality,"Scuola Elementare, Via Frizzi"
+● familiarity_positive,● nature_positive,1,positive,positive,familiarity,nature,"Scuola Elementare, Via Frizzi"
+● accessibility_positive,● ambience_positive,1,positive,positive,accessibility,ambience,Simen x Paoli
+● accessibility_positive,● nature_positive,1,positive,positive,accessibility,nature,Simen x Paoli
+● coherence_negative,● nature_positive,1,negative,positive,coherence,nature,Simen x Paoli
+● continuity_negative,● cultural heritage_negative,2,negative,negative,continuity,cultural heritage,Simen x Paoli
+● continuity_negative,● interactions/vitality_negative,1,negative,negative,continuity,interactions/vitality,Simen x Paoli
+● cultural heritage_negative,● interactions/vitality_negative,1,negative,negative,cultural heritage,interactions/vitality,Simen x Paoli
+● accessibility_positive,● interactions/vitality_positive,1,positive,positive,accessibility,interactions/vitality,Via Mezzaro
+● accessibility_positive,● nature_positive,1,positive,positive,accessibility,nature,Via Mezzaro
+● ambience_positive,● coherence_negative,1,positive,negative,ambience,coherence,Via Mezzaro
+● ambience_positive,● crossability_negative,1,positive,negative,ambience,crossability,Via Mezzaro
+● ambience_positive,● interactions/vitality_positive,1,positive,positive,ambience,interactions/vitality,Via Mezzaro
+● coherence_negative,● continuity_negative,2,negative,negative,coherence,continuity,Via Mezzaro
+● coherence_negative,● crossability_negative,5,negative,negative,coherence,crossability,Via Mezzaro
+● coherence_negative,● cultural heritage_negative,1,negative,negative,coherence,cultural heritage,Via Mezzaro
+● coherence_negative,● interactions/vitality_negative,2,negative,negative,coherence,interactions/vitality,Via Mezzaro
+● continuity_negative,● cultural heritage_negative,2,negative,negative,continuity,cultural heritage,Via Mezzaro
+● continuity_negative,● interactions/vitality_negative,3,negative,negative,continuity,interactions/vitality,Via Mezzaro
+● crossability_negative,● interactions/vitality_negative,2,negative,negative,crossability,interactions/vitality,Via Mezzaro
+● crossability_negative,● safety_comfort_negative,1,negative,negative,crossability,safety_comfort,Via Mezzaro
+● cultural heritage_negative,● interactions/vitality_negative,1,negative,negative,cultural heritage,interactions/vitality,Via Mezzaro
+● environment_negative,● safety_comfort_negative,1,negative,negative,environment,safety_comfort,Via Mezzaro
+● familiarity_positive,● interactions/vitality_positive,2,positive,positive,familiarity,interactions/vitality,Via Mezzaro
+● interactions/vitality_positive,● nature_positive,1,positive,positive,interactions/vitality,nature,Via Mezzaro

@@ -40,8 +40,16 @@ def _saved_notebook():
 def replay_saved_outputs(cell_index):
     """Publish every saved output belonging to one original code cell."""
 
-    # Select the matching cell from the unchanged, on-disk notebook document.
-    cell = _saved_notebook().cells[cell_index]
+    # Find the cell by its immutable original index.  This keeps replay correct
+    # even though the live dashboard is deliberately placed near the top.
+    cell = next(
+        candidate
+        for candidate in _saved_notebook().cells
+        if candidate.get("metadata", {}).get("qualiscapes_original_index") == cell_index
+    )
+
+    # Track whether this cell has already explained a historical widget output.
+    widget_notice_shown = False
 
     # Re-emit outputs in their original order so multi-part results stay intact.
     for output in cell.get("outputs", []):
@@ -61,7 +69,34 @@ def replay_saved_outputs(cell_index):
 
         # Rich display and expression results both store a complete MIME bundle.
         if output_type in {"display_data", "execute_result"}:
-            # Publish the original HTML, PNG, Plotly, widget, and text fallbacks.
+            # Saved widget model IDs belonged to the author's old kernel and
+            # cannot retain Python callbacks in a new cloud session.  Rendering
+            # those IDs would create controls that look active but do nothing.
+            if "application/vnd.jupyter.widget-view+json" in output.get("data", {}):
+                # Show one transparent explanation per original widget cell.
+                if not widget_notice_shown:
+                    display(
+                        {
+                            "text/html": (
+                                "<div style='padding:10px 12px;border-left:4px solid #4c78a8;"
+                                "background:#f3f6fa;margin:8px 0'>"
+                                "<b>Live replacement available.</b> This historical widget used "
+                                "a kernel that no longer exists. Its fully interactive replacement "
+                                "is in the <a href='#qualiscapes-live-dashboard'>dashboard at the top</a>."
+                                "</div>"
+                            )
+                        },
+                        raw=True,
+                    )
+                    # Suppress repeated notices for paired controls/output models.
+                    widget_notice_shown = True
+                else:
+                    # Preserve the output slot without publishing a dead widget model.
+                    display({"text/html": ""}, raw=True)
+                # Continue because the stale widget MIME bundle must not be sent.
+                continue
+
+            # Publish the original HTML, PNG, Plotly, and text fallbacks.
             display(
                 dict(output.get("data", {})),
                 raw=True,

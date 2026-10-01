@@ -4,6 +4,7 @@ from collections import defaultdict
 from pathlib import Path
 
 import ipywidgets as widgets
+import networkx as nx
 import numpy as np
 import pandas as pd
 import plotly.express as px
@@ -47,6 +48,34 @@ def _empty_figure(message):
     figure.add_annotation(text=message, x=.5, y=.5, showarrow=False)
     figure.update_layout(height=520, xaxis_visible=False, yaxis_visible=False)
     return figure
+
+
+def _network_positions(graph, layout_name):
+    """Return deterministic two-dimensional positions for an interactive graph."""
+    # Circular placement is useful when users want to compare all nodes equally.
+    if layout_name == "Circular":
+        return nx.circular_layout(graph)
+    # Kamada-Kawai emphasizes graph distance and often separates communities well.
+    if layout_name == "Kamada-Kawai":
+        return nx.kamada_kawai_layout(graph, weight="weight")
+    # A fixed seed makes the default spring layout stable across widget changes.
+    return nx.spring_layout(graph, weight="weight", seed=17, k=None)
+
+
+def _scaled_sizes(values, low=13, high=42):
+    """Scale non-negative node strengths into a readable marker-size range."""
+    # Convert arbitrary numeric iterables into one floating-point array.
+    array = np.asarray(list(values), dtype=float)
+    # Return an empty array when the filtered graph contains no nodes.
+    if array.size == 0:
+        return array
+    # Compress large differences so a few dominant nodes do not hide the rest.
+    array = np.sqrt(np.maximum(array, 0))
+    # Use one middle size when every node has the same strength.
+    if np.nanmax(array) == np.nanmin(array):
+        return np.full(array.size, (low + high) / 2)
+    # Map the observed range linearly onto the requested visual range.
+    return low + (array - np.nanmin(array)) * (high - low) / (np.nanmax(array) - np.nanmin(array))
 
 
 def _sankey_from_paths(paths, value_column, focus=None, top_n=25, title="Discursive pathways"):
@@ -205,6 +234,148 @@ def _cooccurrence_panel():
     return widgets.VBox([widgets.HBox([focus, metric, top_n]), output])
 
 
+def _cooccurrence_network_panel():
+    """Explore the undirected co-occurrence network globally or by stop."""
+    # Load only precomputed global and stop-level edges; no analysis is rerun.
+    global_edges = _read("global_pairs_all.csv")
+    stop_edges = _read("stop_edges_long.csv")
+    # Remove export marker glyphs from every code shown in the browser.
+    for frame in (global_edges, stop_edges):
+        for column in ("code_a", "code_b"):
+            frame[column] = frame[column].map(_clean_label)
+
+    # Let users switch between the complete corpus and one stop/document group.
+    stops = sorted(stop_edges["stop"].dropna().unique(), key=str.casefold)
+    scope = widgets.Dropdown(
+        options=[("Global", None), *[(name, name) for name in stops]],
+        description="Scope:",
+        layout=widgets.Layout(width="430px"),
+    )
+    # A focal code isolates its immediate undirected neighbourhood.
+    focus = widgets.Dropdown(
+        options=[("All codes", None)],
+        description="Focus:",
+        layout=widgets.Layout(width="430px"),
+    )
+    # The edge slider prevents a dense network from becoming unreadable.
+    top_n = widgets.IntSlider(
+        value=40, min=10, max=100, step=5,
+        description="Top edges:", continuous_update=False,
+    )
+    # Users can compare complementary graph layouts without recalculating data.
+    layout = widgets.Dropdown(
+        options=["Spring", "Kamada-Kawai", "Circular"],
+        value="Spring", description="Layout:",
+    )
+    # Keep redraws inside one replaceable output area.
+    output = widgets.Output()
+
+    def selected_edges():
+        """Return the currently selected precomputed co-occurrence table."""
+        # Global scope uses the complete matrix-derived pair table.
+        if scope.value is None:
+            return global_edges.copy()
+        # Stop scope uses only edges assigned to that named stop.
+        return stop_edges[stop_edges["stop"].eq(scope.value)].copy()
+
+    def refresh_focus(*_):
+        """Update focal-code choices whenever the selected scope changes."""
+        # Collect every source or target code in the selected edge table.
+        edges = selected_edges()
+        nodes = sorted(set(edges["code_a"]).union(edges["code_b"]), key=str.casefold)
+        # Preserve the previous choice when it also exists in the new scope.
+        previous = focus.value
+        focus.options = [("All codes", None), *[(node, node) for node in nodes]]
+        focus.value = previous if previous in nodes else None
+
+    def render(*_):
+        """Redraw the graph and its exact-value table from current controls."""
+        # Replace the preceding view rather than appending repeated figures.
+        with output:
+            clear_output(wait=True)
+            # Rank first so the graph stays responsive even at global scale.
+            edges = selected_edges().nlargest(top_n.value, "cooccurrence").copy()
+            # A focal selection retains only edges touching the chosen code.
+            if focus.value:
+                edges = edges[
+                    edges["code_a"].eq(focus.value)
+                    | edges["code_b"].eq(focus.value)
+                ]
+            # Explain empty combinations instead of displaying a blank canvas.
+            if edges.empty:
+                display(_empty_figure("No co-occurrence edges meet the current filters."))
+                return
+
+            # Construct the displayed graph from the already-ranked edges.
+            graph = nx.Graph()
+            sentiment = {}
+            for row in edges.itertuples(index=False):
+                weight = float(row.cooccurrence)
+                graph.add_edge(row.code_a, row.code_b, weight=weight)
+                sentiment[row.code_a] = getattr(row, "sentiment_a", None)
+                sentiment[row.code_b] = getattr(row, "sentiment_b", None)
+            # Calculate deterministic coordinates for the selected layout.
+            positions = _network_positions(graph, layout.value)
+            # Start with a clean Plotly figure and draw one trace per edge.
+            figure = go.Figure()
+            for source, target, attributes in graph.edges(data=True):
+                x0, y0 = positions[source]
+                x1, y1 = positions[target]
+                weight = float(attributes["weight"])
+                figure.add_trace(go.Scatter(
+                    x=[x0, x1], y=[y0, y1], mode="lines",
+                    line=dict(width=max(1, min(8, .8 + np.sqrt(weight))), color="rgba(110,110,110,.42)"),
+                    hoverinfo="skip", showlegend=False,
+                ))
+            # Weighted degree controls node size and is also shown on hover.
+            nodes = list(graph.nodes())
+            strengths = np.array([graph.degree(node, weight="weight") for node in nodes], dtype=float)
+            sizes = _scaled_sizes(strengths)
+            figure.add_trace(go.Scatter(
+                x=[positions[node][0] for node in nodes],
+                y=[positions[node][1] for node in nodes],
+                mode="markers+text",
+                text=nodes,
+                textposition="top center",
+                customdata=np.stack([strengths, [graph.degree(node) for node in nodes]], axis=-1),
+                marker=dict(
+                    size=sizes,
+                    color=["#e45756" if node == focus.value else _colour(sentiment.get(node)) for node in nodes],
+                    line=dict(color="white", width=1.2),
+                ),
+                hovertemplate="<b>%{text}</b><br>weighted degree: %{customdata[0]:.3g}<br>visible neighbours: %{customdata[1]}<extra></extra>",
+                showlegend=False,
+            ))
+            # Label the current scope explicitly to prevent overgeneralization.
+            title_scope = scope.value or "global corpus"
+            figure.update_layout(
+                title=f"Interactive co-occurrence network — {title_scope}",
+                height=760,
+                margin=dict(l=20, r=20, t=75, b=20),
+                xaxis=dict(visible=False),
+                yaxis=dict(visible=False),
+                hovermode="closest",
+            )
+            # Display both the graph and the numerical evidence behind it.
+            display(figure)
+            display(edges[["code_a", "code_b", "cooccurrence"]].sort_values("cooccurrence", ascending=False))
+
+    # Scope changes also require rebuilding the focal-code list.
+    scope.observe(refresh_focus, names="value")
+    # Every visible control triggers a redraw using cached CSV results.
+    for control in (scope, focus, top_n, layout):
+        control.observe(render, names="value")
+    # Populate controls and draw the initial global view immediately.
+    refresh_focus()
+    render()
+    # Arrange controls above the replaceable graph output.
+    return widgets.VBox([
+        widgets.HBox([scope, layout, top_n]),
+        focus,
+        output,
+    ])
+
+
 def _transition_panel():
     """Create a merged-node directed Sankey from precomputed transition edges."""
     edges = _read("directed_transitions_all_levels_by_stop.csv")
@@ -286,6 +457,153 @@ def _transition_panel():
     refresh_focus()
     render()
     return widgets.VBox([widgets.HBox([level, stop, metric]), widgets.HBox([focus, top_n]), output])
+
+
+def _directed_graph_panel():
+    """Explore transitions as a force-directed network with visible arrows."""
+    # Load the precomputed transition table shared with the Sankey panel.
+    edges = _read("directed_transitions_all_levels_by_stop.csv")
+    # Expose every hierarchy level and stop already present in the results.
+    levels = [value for value in ("leaf", "indicator", "domain") if value in set(edges["level"])]
+    stops = sorted(edges["stop"].dropna().unique(), key=str.casefold)
+    # Define controls for hierarchy, document scope, weighting, and layout.
+    level = widgets.Dropdown(options=levels, value="indicator" if "indicator" in levels else levels[0], description="Level:")
+    stop = widgets.Dropdown(options=[("All stops", None), *[(name, name) for name in stops]], description="Stop:", layout=widgets.Layout(width="420px"))
+    metric = widgets.Dropdown(options=[("Raw occurrences", "raw_transition_count"), ("Fractional weight", "weight")], value="raw_transition_count", description="Weight:")
+    layout = widgets.Dropdown(options=["Spring", "Kamada-Kawai", "Circular"], value="Spring", description="Layout:")
+    focus = widgets.Dropdown(options=[("All codes", None)], description="Focus:", layout=widgets.Layout(width="430px"))
+    top_n = widgets.IntSlider(value=45, min=10, max=100, step=5, description="Top arrows:", continuous_update=False)
+    self_links = widgets.Checkbox(value=True, description="Show self-links")
+    # Reserve one output region for redraws and the supporting value table.
+    output = widgets.Output()
+
+    def selected_edges():
+        """Aggregate the selected precomputed transitions across stops."""
+        # Restrict the table to the selected hierarchy level first.
+        selected = edges[edges["level"].eq(level.value)].copy()
+        # Apply an optional individual-stop filter.
+        if stop.value:
+            selected = selected[selected["stop"].eq(stop.value)]
+        # Merge repeated source-target rows while retaining both weight measures.
+        return selected.groupby(["source_code", "target_code"], as_index=False).agg(
+            weight=("weight", "sum"),
+            raw_transition_count=("raw_transition_count", "sum"),
+            stops=("stop", "nunique"),
+            quotation_pairs=("unique_quotation_pairs", "sum"),
+        )
+
+    def refresh_focus(*_):
+        """Refresh the focal-node selector for the chosen level and stop."""
+        selected = selected_edges()
+        nodes = sorted(set(selected["source_code"]).union(selected["target_code"]), key=str.casefold)
+        previous = focus.value
+        focus.options = [("All codes", None), *[(node, node) for node in nodes]]
+        focus.value = previous if previous in nodes else None
+
+    def render(*_):
+        """Draw the current directed neighbourhood and its exact edge values."""
+        with output:
+            clear_output(wait=True)
+            # Rank transitions using the user-selected descriptive measure.
+            selected = selected_edges().nlargest(top_n.value, metric.value).copy()
+            # Optionally remove self-continuation edges before graph construction.
+            if not self_links.value:
+                selected = selected[~selected["source_code"].eq(selected["target_code"])]
+            # A focal selection shows both incoming and outgoing relationships.
+            if focus.value:
+                selected = selected[
+                    selected["source_code"].eq(focus.value)
+                    | selected["target_code"].eq(focus.value)
+                ]
+            if selected.empty:
+                display(_empty_figure("No directed transitions meet the current filters."))
+                return
+
+            # Build a directed graph, retaining the selected metric as edge weight.
+            graph = nx.DiGraph()
+            for row in selected.itertuples(index=False):
+                graph.add_edge(row.source_code, row.target_code, weight=float(getattr(row, metric.value)))
+            # Layout algorithms use an undirected projection for stable placement.
+            positions = _network_positions(graph.to_undirected(), layout.value)
+            figure = go.Figure()
+            annotations = []
+            # Draw non-self edges as lines and add arrowheads separately.
+            for source, target, attributes in graph.edges(data=True):
+                x0, y0 = positions[source]
+                x1, y1 = positions[target]
+                weight = float(attributes["weight"])
+                if source == target:
+                    # A loop symbol beside the node makes repeated references visible.
+                    figure.add_trace(go.Scatter(
+                        x=[x0 + .035], y=[y0 + .035], mode="text", text=["↻"],
+                        textfont=dict(size=24, color="#7a5195"),
+                        hovertext=[f"{source} → {target}<br>{metric.label}: {weight:.3g}"],
+                        hoverinfo="text", showlegend=False,
+                    ))
+                    continue
+                figure.add_trace(go.Scatter(
+                    x=[x0, x1], y=[y0, y1], mode="lines",
+                    line=dict(width=max(1, min(7, .8 + np.sqrt(max(weight, 0)))), color="rgba(76,120,168,.38)"),
+                    hoverinfo="skip", showlegend=False,
+                ))
+                # Place an arrowhead near the target while leaving its label clear.
+                annotations.append(dict(
+                    ax=x0, ay=y0, x=x0 + .88 * (x1 - x0), y=y0 + .88 * (y1 - y0),
+                    xref="x", yref="y", axref="x", ayref="y",
+                    showarrow=True, arrowhead=2, arrowsize=1, arrowwidth=1.2,
+                    arrowcolor="rgba(76,120,168,.58)", text="",
+                ))
+            # Size nodes by combined incoming and outgoing selected strength.
+            nodes = list(graph.nodes())
+            strengths = np.array([
+                graph.in_degree(node, weight="weight") + graph.out_degree(node, weight="weight")
+                for node in nodes
+            ], dtype=float)
+            sizes = _scaled_sizes(strengths)
+            figure.add_trace(go.Scatter(
+                x=[positions[node][0] for node in nodes],
+                y=[positions[node][1] for node in nodes],
+                mode="markers+text", text=nodes, textposition="top center",
+                customdata=np.stack([
+                    strengths,
+                    [graph.in_degree(node) for node in nodes],
+                    [graph.out_degree(node) for node in nodes],
+                ], axis=-1),
+                marker=dict(
+                    size=sizes,
+                    color=["#e45756" if node == focus.value else _colour(node) for node in nodes],
+                    line=dict(color="white", width=1.2),
+                ),
+                hovertemplate="<b>%{text}</b><br>total strength: %{customdata[0]:.3g}<br>incoming arrows: %{customdata[1]}<br>outgoing arrows: %{customdata[2]}<extra></extra>",
+                showlegend=False,
+            ))
+            # State explicitly that arrows represent sequence, not causality.
+            title_scope = stop.value or "all stops"
+            figure.update_layout(
+                title=f"Directed discourse network — {level.value} — {title_scope}<br><sup>Arrow direction is observed coded order, not causality.</sup>",
+                height=780,
+                margin=dict(l=20, r=20, t=95, b=20),
+                annotations=annotations,
+                xaxis=dict(visible=False), yaxis=dict(visible=False),
+                hovermode="closest",
+            )
+            display(figure)
+            display(selected[["source_code", "target_code", metric.value, "stops", "quotation_pairs"]].sort_values(metric.value, ascending=False))
+
+    # Hierarchy and stop changes also alter the available focal nodes.
+    for control in (level, stop):
+        control.observe(refresh_focus, names="value")
+    # Every control updates the displayed graph without rerunning analysis.
+    for control in (level, stop, metric, layout, focus, top_n, self_links):
+        control.observe(render, names="value")
+    refresh_focus()
+    render()
+    return widgets.VBox([
+        widgets.HBox([level, stop, metric]),
+        widgets.HBox([layout, top_n, self_links]),
+        focus,
+        output,
+    ])
 
 
 def _pathway_panel():
@@ -380,7 +698,7 @@ def launch_dashboard():
     """Assemble and display the complete code-hidden public dashboard."""
     header = widgets.HTML(
         """
-        <div style="padding:18px 22px;border-radius:12px;background:#f3f6fa;margin-bottom:14px">
+        <div id="qualiscapes-live-dashboard" style="padding:18px 22px;border-radius:12px;background:#f3f6fa;margin-bottom:14px">
           <h1 style="margin:0 0 8px 0">QUALISCAPES — Minusio internal dashboard</h1>
           <p style="margin:0">Precomputed descriptive and inferential results with interactive views.
           No source interview files are included in this deployment.</p>
@@ -390,14 +708,22 @@ def launch_dashboard():
     tabs = widgets.Tab(children=[
         _overview_panel(),
         _cooccurrence_panel(),
+        _cooccurrence_network_panel(),
         _transition_panel(),
+        _directed_graph_panel(),
         _pathway_panel(),
         _figure_gallery(),
         _methods_panel(),
     ])
     for index, title in enumerate((
-        "Overview", "Co-occurrences", "Directed flows", "Full chains", "Report figures", "Methods & checks"
+        "Overview",
+        "Co-occurrence pairs",
+        "Co-occurrence network",
+        "Directed Sankey",
+        "Directed graph",
+        "Full chains",
+        "Report figures",
+        "Methods & checks",
     )):
         tabs.set_title(index, title)
     display(widgets.VBox([header, tabs], layout=widgets.Layout(width="100%")))
-

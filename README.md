@@ -14,6 +14,16 @@ Visitors need only a browser. Binder installs the environment and runs the
 dashboard automatically on cloud infrastructure; no local Python or notebook
 execution is required. The first build can take several minutes.
 
+The live dashboard appears near the top and includes interactive overview,
+co-occurrence ranking, co-occurrence network, directed Sankey, directed graph,
+complete-chain, figure-gallery, and methods panels. Historical widget model IDs
+are not reused because their original kernels no longer exist; the public copy
+links those locations back to the corresponding live cloud controls.
+
+The launch URL follows the repository's `HEAD`, so it remains valid after future
+pushes. An already-running Binder session is pinned to its launch commit: reopen
+the launch URL to start an updated session after publishing changes.
+
 The deployment intentionally excludes the original ATLAS.ti quotation exports,
 Word documents, and project files. The compact `qualiscapes_internal_dashboard`
 notebook remains available as a results-only alternative.
