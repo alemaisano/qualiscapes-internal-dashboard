@@ -20,6 +20,11 @@ complete-chain, figure-gallery, and methods panels. Historical widget model IDs
 are not reused because their original kernels no longer exist; the public copy
 links those locations back to the corresponding live cloud controls.
 
+The co-occurrence network tab uses the same explorer function as the main
+notebook's stop-network section. Its Network selector contains Global plus all
+ten stops, and retains every original analytical, styling, labeling, hover, and
+visibility control.
+
 The launch URL follows the repository's `HEAD`, so it remains valid after future
 pushes. An already-running Binder session is pinned to its launch commit: reopen
 the launch URL to start an updated session after publishing changes.

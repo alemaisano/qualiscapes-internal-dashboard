@@ -1,6 +1,7 @@
 """Interactive, precomputed QUALISCAPES dashboard served with Voilà."""
 
 from collections import defaultdict
+import json
 from pathlib import Path
 
 import ipywidgets as widgets
@@ -10,6 +11,9 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from IPython.display import HTML, clear_output, display
+
+# Reuse the exact Global/stop explorer copied from the analytical notebook.
+from notebook_network_explorer import interactive_network_explorer
 
 
 ROOT = Path(__file__).resolve().parent
@@ -234,8 +238,8 @@ def _cooccurrence_panel():
     return widgets.VBox([widgets.HBox([focus, metric, top_n]), output])
 
 
-def _cooccurrence_network_panel():
-    """Explore the undirected co-occurrence network globally or by stop."""
+def _simplified_cooccurrence_network_panel():
+    """Retain the compact network implementation for internal fallback use."""
     # Load only precomputed global and stop-level edges; no analysis is rerun.
     global_edges = _read("global_pairs_all.csv")
     stop_edges = _read("stop_edges_long.csv")
@@ -374,6 +378,49 @@ def _cooccurrence_network_panel():
         focus,
         output,
     ])
+
+
+def _load_notebook_network_analyses():
+    """Rebuild the notebook explorer inputs from packaged aggregate results."""
+    # Read the exact Global and stop-specific summaries exported by the pipeline.
+    payload = json.loads((DATA / "notebook_network_analyses.json").read_text(encoding="utf-8"))
+    # Convert JSON records back to the two DataFrames used by the notebook function.
+    analyses = {}
+    for analysis_name, values in payload.items():
+        # Preserve original code labels, frequencies, matrices, and validity flags.
+        analyses[analysis_name] = {
+            "code_summary": pd.DataFrame(values["code_summary"]),
+            "pairs": pd.DataFrame(values["pairs"]),
+            "codes": values["codes"],
+            "code_frequency": np.asarray(values["code_frequency"], dtype=float),
+            "matrix": np.asarray(values["matrix"], dtype=float),
+            "code_frequency_valid": bool(values["code_frequency_valid"]),
+        }
+    # Return the mapping in its deterministic Global-then-stops JSON order.
+    return analyses
+
+
+def _cooccurrence_network_panel():
+    """Embed the exact Global/stop network explorer from the main notebook."""
+    # Load one Global analysis and all ten stop analyses from derived public data.
+    analyses = _load_notebook_network_analyses()
+    # Remove Global before passing the remaining named analyses as stop choices.
+    global_analysis = analyses.pop("Global")
+    # Build the original controls and FigureWidget without displaying them twice.
+    controls, graph = interactive_network_explorer(
+        global_analysis,
+        analyses,
+        default_analysis="Global",
+        display_widget=False,
+    )
+    # Explain that this is the literal notebook explorer, not a reduced dashboard view.
+    note = widgets.HTML(
+        "<p><b>Exact notebook network explorer.</b> The Network dropdown contains "
+        "Global and every stop. All analytical and display controls from the original "
+        "notebook cell are retained.</p>"
+    )
+    # Place the unchanged controls immediately above their live Plotly graph.
+    return widgets.VBox([note, controls, graph], layout=widgets.Layout(width="100%"))
 
 
 def _transition_panel():
