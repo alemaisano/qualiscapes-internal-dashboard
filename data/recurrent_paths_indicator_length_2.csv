@@ -1,0 +1,402 @@
+level,path_length,path,sentiment_pattern,weighted_count,raw_count,unique_sources,mean_reference_span,median_reference_span,stop_distribution,source_normalized_support,persists_after_leave_one_source_out
+indicator,2,continuity -> continuity,unmarked -> unmarked,18.31388888888889,53,10,12.716981132075471,6.0,"{""Navegna Lago"": 8, ""Crocifisso"": 2, ""Simen x Paoli"": 4, ""After Via dei Colli / Before Mezzaro"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 8, ""Ponte Navegna"": 5, ""Chiesa, Via San Gottardo"": 17, ""Panorama, Via dei Colli"": 6, ""Scuola Elementare, Via Frizzi"": 1}",1.0,True
+indicator,2,cultural heritage -> continuity,unmarked -> unmarked,3.8472222222222223,11,8,12.636363636363637,10.0,"{""Navegna Lago"": 1, ""Crocifisso"": 2, ""Simen x Paoli"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 2, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 2, ""Panorama, Via dei Colli"": 1}",0.8,True
+indicator,2,nature -> continuity,unmarked -> unmarked,3.513888888888889,17,8,9.705882352941176,9.0,"{""Navegna Lago"": 5, ""Simen x Paoli"": 1, ""After Via dei Colli / Before Mezzaro"": 2, ""Via Mezzaro"": 1, ""Ponte Navegna"": 4, ""Chiesa, Via San Gottardo"": 2, ""Panorama, Via dei Colli"": 1, ""Scuola Elementare, Via Frizzi"": 1}",0.8,True
+indicator,2,interactions/vitality -> interactions/vitality,unmarked -> unmarked,10.088888888888889,22,7,6.2272727272727275,5.0,"{""Crocifisso"": 1, ""Simen x Paoli"": 2, ""Mulino San Martino / Parco Vicolo della Roggia"": 3, ""Via Mezzaro"": 3, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 10, ""Scuola Elementare, Via Frizzi"": 1}",0.7,True
+indicator,2,continuity -> coherence,unmarked -> unmarked,4.863888888888889,16,7,8.8125,6.0,"{""Navegna Lago"": 4, ""Crocifisso"": 1, ""Simen x Paoli"": 1, ""Via Mezzaro"": 3, ""Ponte Navegna"": 4, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 2}",0.7,True
+indicator,2,continuity -> interactions/vitality,unmarked -> unmarked,4.419444444444444,15,7,14.266666666666667,15.0,"{""Navegna Lago"": 1, ""Crocifisso"": 2, ""Simen x Paoli"": 1, ""Via Mezzaro"": 2, ""Chiesa, Via San Gottardo"": 3, ""Panorama, Via dei Colli"": 5, ""Scuola Elementare, Via Frizzi"": 1}",0.7,True
+indicator,2,interactions/vitality -> continuity,unmarked -> unmarked,3.9611111111111112,11,7,10.272727272727273,5.0,"{""Navegna Lago"": 1, ""Crocifisso"": 1, ""Simen x Paoli"": 1, ""Via Mezzaro"": 3, ""Chiesa, Via San Gottardo"": 3, ""Panorama, Via dei Colli"": 1, ""Scuola Elementare, Via Frizzi"": 1}",0.7,True
+indicator,2,crossability -> continuity,unmarked -> unmarked,1.6416666666666666,8,7,5.875,3.5,"{""Navegna Lago"": 1, ""Crocifisso"": 1, ""Simen x Paoli"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 2, ""Scuola Elementare, Via Frizzi"": 1}",0.7,True
+indicator,2,coherence -> coherence,unmarked -> unmarked,7.772222222222222,23,6,6.565217391304348,3.0,"{""Navegna Lago"": 5, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 5, ""Ponte Navegna"": 9, ""Panorama, Via dei Colli"": 2, ""Scuola Elementare, Via Frizzi"": 1}",0.6,True
+indicator,2,continuity -> nature,unmarked -> unmarked,3.958333333333333,15,6,8.066666666666666,5.0,"{""Navegna Lago"": 3, ""After Via dei Colli / Before Mezzaro"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 3, ""Chiesa, Via San Gottardo"": 2, ""Panorama, Via dei Colli"": 4}",0.6,True
+indicator,2,accessibility -> accessibility,unmarked -> unmarked,3.361111111111111,9,6,4.0,3.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 3, ""Panorama, Via dei Colli"": 2}",0.6,True
+indicator,2,distinctiveness -> continuity,unmarked -> unmarked,3.3472222222222223,17,6,7.176470588235294,3.0,"{""Navegna Lago"": 4, ""Simen x Paoli"": 1, ""Via Mezzaro"": 6, ""Ponte Navegna"": 3, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 2}",0.6,True
+indicator,2,safety_comfort -> compatibility,unmarked -> unmarked,2.833333333333333,8,6,9.5,5.5,"{""Navegna Lago"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 2, ""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1, ""Scuola Elementare, Via Frizzi"": 1}",0.6,True
+indicator,2,accessibility -> continuity,unmarked -> unmarked,2.8194444444444446,9,6,8.11111111111111,4.0,"{""Crocifisso"": 1, ""Simen x Paoli"": 2, ""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 2, ""Panorama, Via dei Colli"": 1}",0.6,True
+indicator,2,crossability -> crossability,unmarked -> unmarked,2.736111111111111,12,6,6.5,3.5,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Via Mezzaro"": 3, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 4}",0.6,True
+indicator,2,coherence -> continuity,unmarked -> unmarked,2.4944444444444445,11,6,12.727272727272727,6.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 2, ""Via Mezzaro"": 2, ""Ponte Navegna"": 3, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 2}",0.6,True
+indicator,2,ambience -> continuity,unmarked -> unmarked,1.9722222222222223,9,6,12.555555555555555,6.0,"{""Navegna Lago"": 1, ""Crocifisso"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 3, ""Chiesa, Via San Gottardo"": 2, ""Panorama, Via dei Colli"": 1}",0.6,True
+indicator,2,beauty -> nature,unmarked -> unmarked,1.5916666666666666,8,6,9.125,6.5,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 3, ""Scuola Elementare, Via Frizzi"": 1}",0.6,True
+indicator,2,accessibility -> interactions/vitality,unmarked -> unmarked,1.5333333333333332,7,6,1.7142857142857142,2.0,"{""Simen x Paoli"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 1}",0.6,True
+indicator,2,environment -> environment,unmarked -> unmarked,8.161111111111111,20,5,7.0,2.5,"{""Simen x Paoli"": 1, ""After Via dei Colli / Before Mezzaro"": 2, ""Ponte Navegna"": 10, ""Chiesa, Via San Gottardo"": 5, ""Panorama, Via dei Colli"": 2}",0.5,True
+indicator,2,nature -> distinctiveness,unmarked -> unmarked,4.2316666666666665,15,5,9.266666666666667,4.0,"{""Navegna Lago"": 3, ""After Via dei Colli / Before Mezzaro"": 1, ""Via Mezzaro"": 3, ""Ponte Navegna"": 3, ""Panorama, Via dei Colli"": 5}",0.5,True
+indicator,2,distinctiveness -> distinctiveness,unmarked -> unmarked,3.8569444444444447,17,5,4.823529411764706,2.0,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Via Mezzaro"": 7, ""Ponte Navegna"": 5, ""Panorama, Via dei Colli"": 3}",0.5,True
+indicator,2,continuity -> cultural heritage,unmarked -> unmarked,3.7222222222222223,10,5,7.8,6.0,"{""Navegna Lago"": 1, ""Crocifisso"": 2, ""Via Mezzaro"": 1, ""Ponte Navegna"": 3, ""Chiesa, Via San Gottardo"": 3}",0.5,True
+indicator,2,nature -> nature,unmarked -> unmarked,3.675,16,5,6.5625,6.0,"{""Navegna Lago"": 3, ""After Via dei Colli / Before Mezzaro"": 3, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Ponte Navegna"": 3, ""Panorama, Via dei Colli"": 6}",0.5,True
+indicator,2,compatibility -> compatibility,unmarked -> unmarked,3.458333333333333,9,5,9.333333333333334,8.0,"{""Navegna Lago"": 4, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1}",0.5,True
+indicator,2,continuity -> safety_comfort,unmarked -> unmarked,3.4166666666666665,11,5,13.363636363636363,12.0,"{""Navegna Lago"": 2, ""Via Mezzaro"": 2, ""Ponte Navegna"": 3, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 3}",0.5,True
+indicator,2,distinctiveness -> nature,unmarked -> unmarked,2.897222222222222,15,5,4.066666666666666,4.0,"{""Navegna Lago"": 3, ""After Via dei Colli / Before Mezzaro"": 3, ""Via Mezzaro"": 2, ""Ponte Navegna"": 3, ""Panorama, Via dei Colli"": 4}",0.5,True
+indicator,2,beauty -> continuity,unmarked -> unmarked,2.7472222222222222,12,5,8.666666666666666,8.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 4, ""Chiesa, Via San Gottardo"": 3, ""Panorama, Via dei Colli"": 3}",0.5,True
+indicator,2,authenticity -> continuity,unmarked -> unmarked,2.686111111111111,12,5,6.25,3.0,"{""Navegna Lago"": 2, ""Simen x Paoli"": 1, ""After Via dei Colli / Before Mezzaro"": 2, ""Via Mezzaro"": 5, ""Ponte Navegna"": 2}",0.5,True
+indicator,2,continuity -> ambience,unmarked -> unmarked,2.5566666666666666,14,5,18.571428571428573,9.0,"{""Navegna Lago"": 3, ""Via Mezzaro"": 1, ""Ponte Navegna"": 3, ""Chiesa, Via San Gottardo"": 3, ""Panorama, Via dei Colli"": 4}",0.5,True
+indicator,2,continuity -> distinctiveness,unmarked -> unmarked,2.4788888888888887,13,5,9.846153846153847,6.0,"{""Navegna Lago"": 2, ""Via Mezzaro"": 3, ""Ponte Navegna"": 4, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 3}",0.5,True
+indicator,2,ambience -> ambience,unmarked -> unmarked,2.203888888888889,14,5,8.0,6.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 4, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 7}",0.5,True
+indicator,2,safety_comfort -> continuity,unmarked -> unmarked,2.111111111111111,7,5,6.714285714285714,8.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 2, ""Chiesa, Via San Gottardo"": 2, ""Panorama, Via dei Colli"": 1}",0.5,True
+indicator,2,interactions/vitality -> coherence,unmarked -> unmarked,2.0277777777777777,6,5,5.666666666666667,6.0,"{""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 1, ""Scuola Elementare, Via Frizzi"": 1}",0.5,True
+indicator,2,beauty -> ambience,unmarked -> unmarked,1.85,6,5,8.166666666666666,8.5,"{""Crocifisso"": 1, ""Simen x Paoli"": 1, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 2}",0.5,True
+indicator,2,interactions/vitality -> safety_comfort,unmarked -> unmarked,1.6111111111111112,6,5,12.0,13.5,"{""Navegna Lago"": 2, ""Crocifisso"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1, ""Scuola Elementare, Via Frizzi"": 1}",0.5,True
+indicator,2,morphology -> continuity,unmarked -> unmarked,1.575,9,5,10.666666666666666,8.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""Ponte Navegna"": 4, ""Panorama, Via dei Colli"": 2, ""Scuola Elementare, Via Frizzi"": 1}",0.5,True
+indicator,2,compatibility -> safety_comfort,unmarked -> unmarked,1.4166666666666667,6,5,9.333333333333334,6.5,"{""Navegna Lago"": 2, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 1}",0.5,True
+indicator,2,continuity -> appropriation_publicness,unmarked -> unmarked,1.3722222222222222,10,5,13.7,5.5,"{""Navegna Lago"": 4, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 3}",0.5,True
+indicator,2,distinctiveness -> environment,unmarked -> unmarked,1.2833333333333334,7,5,8.0,6.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""After Via dei Colli / Before Mezzaro"": 2, ""Ponte Navegna"": 2, ""Chiesa, Via San Gottardo"": 1}",0.5,True
+indicator,2,appropriation_publicness -> interactions/vitality,unmarked -> unmarked,1.1944444444444444,5,5,6.8,0.0,"{""Simen x Paoli"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.5,True
+indicator,2,beauty -> crossability,unmarked -> unmarked,1.1416666666666666,7,5,3.7142857142857144,4.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 2, ""Scuola Elementare, Via Frizzi"": 1}",0.5,True
+indicator,2,ambience -> interactions/vitality,unmarked -> unmarked,1.0388888888888888,7,5,10.285714285714286,4.0,"{""Navegna Lago"": 2, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 2}",0.5,True
+indicator,2,interactions/vitality -> ambience,unmarked -> unmarked,1.0388888888888888,8,5,6.125,6.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 3}",0.5,True
+indicator,2,crossability -> interactions/vitality,unmarked -> unmarked,1.0027777777777778,7,5,8.428571428571429,3.0,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 2, ""Scuola Elementare, Via Frizzi"": 1}",0.5,True
+indicator,2,accessibility -> Mixed_uses,unmarked -> unmarked,0.95,5,5,45.8,3.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1}",0.5,True
+indicator,2,beauty -> distinctiveness,unmarked -> unmarked,0.9388888888888889,6,5,6.666666666666667,2.0,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.5,True
+indicator,2,crossability -> ambience,unmarked -> unmarked,0.836111111111111,7,5,12.285714285714286,8.0,"{""Navegna Lago"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 3, ""Panorama, Via dei Colli"": 1}",0.5,True
+indicator,2,accessibility -> crossability,unmarked -> unmarked,0.6527777777777778,6,5,4.833333333333333,3.5,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 2}",0.5,True
+indicator,2,compatibility -> coherence,unmarked -> unmarked,4.219444444444444,14,4,8.714285714285714,5.5,"{""Navegna Lago"": 5, ""Via Mezzaro"": 4, ""Ponte Navegna"": 4, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,environment -> continuity,unmarked -> unmarked,2.888888888888889,7,4,32.42857142857143,11.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""Ponte Navegna"": 4, ""Chiesa, Via San Gottardo"": 1}",0.4,True
+indicator,2,continuity -> beauty,unmarked -> unmarked,2.862222222222222,12,4,31.75,14.5,"{""Via Mezzaro"": 2, ""Ponte Navegna"": 3, ""Chiesa, Via San Gottardo"": 2, ""Panorama, Via dei Colli"": 5}",0.4,True
+indicator,2,interactions/vitality -> beauty,unmarked -> unmarked,2.7708333333333335,10,4,15.9,6.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 4, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 4}",0.4,True
+indicator,2,interactions/vitality -> crossability,unmarked -> unmarked,2.5944444444444446,9,4,12.555555555555555,9.0,"{""Crocifisso"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 2, ""Panorama, Via dei Colli"": 5}",0.4,True
+indicator,2,coherence -> beauty,unmarked -> unmarked,2.5722222222222224,10,4,13.2,6.0,"{""Navegna Lago"": 3, ""Via Mezzaro"": 1, ""Ponte Navegna"": 5, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,coherence -> morphology,unmarked -> unmarked,2.563888888888889,10,4,4.6,6.0,"{""Navegna Lago"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Ponte Navegna"": 7, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,continuity -> carrying_capacity,unmarked -> unmarked,2.4566666666666666,9,4,12.0,9.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Chiesa, Via San Gottardo"": 5, ""Panorama, Via dei Colli"": 2}",0.4,True
+indicator,2,safety_comfort -> safety_comfort,unmarked -> unmarked,2.4166666666666665,7,4,6.571428571428571,8.0,"{""Navegna Lago"": 2, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 2, ""Panorama, Via dei Colli"": 2}",0.4,True
+indicator,2,distinctiveness -> accessibility,unmarked -> unmarked,2.35,7,4,9.428571428571429,3.0,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 4, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,beauty -> coherence,unmarked -> unmarked,2.3305555555555553,11,4,11.363636363636363,6.0,"{""Navegna Lago"": 2, ""Via Mezzaro"": 1, ""Ponte Navegna"": 6, ""Panorama, Via dei Colli"": 2}",0.4,True
+indicator,2,beauty -> beauty,unmarked -> unmarked,2.3055555555555554,10,4,17.6,11.5,"{""Navegna Lago"": 3, ""Ponte Navegna"": 3, ""Chiesa, Via San Gottardo"": 2, ""Panorama, Via dei Colli"": 2}",0.4,True
+indicator,2,continuity -> environment,unmarked -> unmarked,2.1222222222222222,9,4,23.11111111111111,10.0,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 4, ""Chiesa, Via San Gottardo"": 3}",0.4,True
+indicator,2,coherence -> environment,unmarked -> unmarked,2.1166666666666667,7,4,4.571428571428571,4.0,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 3}",0.4,True
+indicator,2,continuity -> authenticity,unmarked -> unmarked,1.963888888888889,11,4,4.0,2.0,"{""Navegna Lago"": 3, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 4, ""Ponte Navegna"": 3}",0.4,True
+indicator,2,ambience -> safety_comfort,unmarked -> unmarked,1.9166666666666665,9,4,10.222222222222221,8.0,"{""Navegna Lago"": 2, ""Via Mezzaro"": 2, ""Ponte Navegna"": 3, ""Panorama, Via dei Colli"": 2}",0.4,True
+indicator,2,interactions/vitality -> compatibility,unmarked -> unmarked,1.75,9,4,7.555555555555555,2.0,"{""Navegna Lago"": 2, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 3, ""Panorama, Via dei Colli"": 3}",0.4,True
+indicator,2,ambience -> coherence,unmarked -> unmarked,1.7138888888888888,9,4,6.444444444444445,5.0,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 6, ""Chiesa, Via San Gottardo"": 1}",0.4,True
+indicator,2,nature -> environment,unmarked -> unmarked,1.6916666666666667,7,4,6.0,2.0,"{""Navegna Lago"": 2, ""After Via dei Colli / Before Mezzaro"": 2, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,continuity -> compatibility,unmarked -> unmarked,1.5944444444444443,10,4,23.8,9.0,"{""Navegna Lago"": 6, ""Via Mezzaro"": 1, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,compatibility -> resource_regime,unmarked -> unmarked,1.5333333333333332,5,4,13.4,12.0,"{""Navegna Lago"": 2, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,continuity -> scale,unmarked -> unmarked,1.5333333333333332,5,4,21.8,18.0,"{""Navegna Lago"": 2, ""Via Mezzaro"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,nature -> crossability,unmarked -> unmarked,1.5222222222222224,7,4,2.142857142857143,2.0,"{""Navegna Lago"": 2, ""Simen x Paoli"": 1, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 2}",0.4,True
+indicator,2,coherence -> interactions/vitality,unmarked -> unmarked,1.4833333333333334,4,4,3.5,3.5,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1, ""Scuola Elementare, Via Frizzi"": 1}",0.4,True
+indicator,2,resource_regime -> continuity,unmarked -> unmarked,1.461111111111111,7,4,13.428571428571429,16.0,"{""Navegna Lago"": 4, ""Simen x Paoli"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,safety_comfort -> beauty,unmarked -> unmarked,1.4583333333333335,4,4,17.25,7.5,"{""Navegna Lago"": 1, ""Crocifisso"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,distinctiveness -> coherence,unmarked -> unmarked,1.4361111111111111,8,4,3.375,2.5,"{""Navegna Lago"": 2, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 3, ""Ponte Navegna"": 2}",0.4,True
+indicator,2,nature -> safety_comfort,unmarked -> unmarked,1.4166666666666665,4,4,5.0,4.5,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,cultural heritage -> interactions/vitality,unmarked -> unmarked,1.375,5,4,12.6,12.0,"{""Navegna Lago"": 1, ""Crocifisso"": 1, ""Simen x Paoli"": 1, ""Via Mezzaro"": 2}",0.4,True
+indicator,2,continuity -> resource_regime,unmarked -> unmarked,1.3666666666666667,7,4,15.714285714285714,5.0,"{""Navegna Lago"": 3, ""Simen x Paoli"": 2, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.4,True
+indicator,2,compatibility -> interactions/vitality,unmarked -> unmarked,1.3611111111111112,5,4,7.2,7.0,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 2, ""Scuola Elementare, Via Frizzi"": 1}",0.4,True
+indicator,2,coherence -> distinctiveness,unmarked -> unmarked,1.3,8,4,5.0,6.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Via Mezzaro"": 4, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,familiarity -> coherence,unmarked -> unmarked,1.2916666666666667,4,4,5.5,5.0,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,environment -> nature,unmarked -> unmarked,1.2777777777777777,9,4,6.333333333333333,6.0,"{""Navegna Lago"": 2, ""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 5, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,interactions/vitality -> appropriation_publicness,unmarked -> unmarked,1.2777777777777777,4,4,6.5,5.0,"{""Crocifisso"": 1, ""Simen x Paoli"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,accessibility -> ambience,unmarked -> unmarked,1.1833333333333333,6,4,31.5,12.0,"{""Navegna Lago"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 3}",0.4,True
+indicator,2,beauty -> compatibility,unmarked -> unmarked,1.1833333333333333,7,4,9.428571428571429,12.0,"{""Navegna Lago"": 2, ""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 2}",0.4,True
+indicator,2,coherence -> authenticity,unmarked -> unmarked,1.1611111111111112,6,4,4.5,4.5,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Via Mezzaro"": 3, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,nature -> interactions/vitality,unmarked -> unmarked,1.1416666666666666,5,4,5.6,6.0,"{""Navegna Lago"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 2, ""Scuola Elementare, Via Frizzi"": 1}",0.4,True
+indicator,2,ambience -> compatibility,unmarked -> unmarked,1.125,7,4,6.571428571428571,3.0,"{""Navegna Lago"": 4, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,cultural heritage -> nature,unmarked -> unmarked,1.0972222222222223,5,4,10.4,6.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,ambience -> beauty,unmarked -> unmarked,1.0538888888888889,6,4,11.333333333333334,11.5,"{""Navegna Lago"": 1, ""Ponte Navegna"": 2, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 2}",0.4,True
+indicator,2,authenticity -> distinctiveness,unmarked -> unmarked,1.0472222222222223,7,4,4.428571428571429,6.0,"{""Navegna Lago"": 2, ""After Via dei Colli / Before Mezzaro"": 1, ""Via Mezzaro"": 3, ""Ponte Navegna"": 1}",0.4,True
+indicator,2,familiarity -> interactions/vitality,unmarked -> unmarked,0.9666666666666667,4,4,3.75,3.5,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Scuola Elementare, Via Frizzi"": 1}",0.4,True
+indicator,2,safety_comfort -> coherence,unmarked -> unmarked,0.9583333333333333,4,4,31.5,27.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,complexity -> continuity,unmarked -> unmarked,0.9166666666666666,6,4,11.5,6.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 2}",0.4,True
+indicator,2,cultural heritage -> distinctiveness,unmarked -> unmarked,0.9166666666666666,5,4,10.6,8.0,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Via Mezzaro"": 2, ""Chiesa, Via San Gottardo"": 1}",0.4,True
+indicator,2,ambience -> crossability,unmarked -> unmarked,0.8722222222222222,7,4,5.428571428571429,2.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 3, ""Panorama, Via dei Colli"": 2}",0.4,True
+indicator,2,Mixed_uses -> interactions/vitality,unmarked -> unmarked,0.8666666666666667,4,4,5.5,3.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,ambience -> legibility,unmarked -> unmarked,0.8666666666666667,4,4,3.0,3.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,cultural heritage -> beauty,unmarked -> unmarked,0.8166666666666667,4,4,45.25,19.5,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1}",0.4,True
+indicator,2,safety_comfort -> nature,unmarked -> unmarked,0.8083333333333333,6,4,16.333333333333332,5.5,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 3, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,nature -> ambience,unmarked -> unmarked,0.7761111111111111,6,4,9.666666666666666,6.0,"{""Navegna Lago"": 2, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 2}",0.4,True
+indicator,2,cultural identity -> distinctiveness,unmarked -> unmarked,0.7708333333333333,6,4,9.0,6.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,Mixed_uses -> compatibility,unmarked -> unmarked,0.75,4,4,16.0,14.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,ambience -> carrying_capacity,unmarked -> unmarked,0.7233333333333333,6,4,13.666666666666666,10.0,"{""Navegna Lago"": 2, ""Via Mezzaro"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 2}",0.4,True
+indicator,2,distinctiveness -> beauty,unmarked -> unmarked,0.7124999999999999,5,4,9.2,4.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,distinctiveness -> authenticity,unmarked -> unmarked,0.6875,8,4,4.875,4.0,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 2, ""Via Mezzaro"": 4, ""Ponte Navegna"": 1}",0.4,True
+indicator,2,accessibility -> cultural heritage,unmarked -> unmarked,0.6527777777777778,5,4,7.6,5.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 2, ""After Via dei Colli / Before Mezzaro"": 1, ""Via Mezzaro"": 1}",0.4,True
+indicator,2,crossability -> accessibility,unmarked -> unmarked,0.611111111111111,6,4,4.666666666666667,4.0,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 2}",0.4,True
+indicator,2,nature -> accessibility,unmarked -> unmarked,0.5694444444444444,5,4,3.2,3.0,"{""Navegna Lago"": 2, ""Simen x Paoli"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,ambience -> mystery,unmarked -> unmarked,0.5416666666666666,4,4,2.25,3.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1}",0.4,True
+indicator,2,distinctiveness -> crossability,unmarked -> unmarked,0.5083333333333333,5,4,2.2,2.0,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,ambience -> distinctiveness,unmarked -> unmarked,0.49277777777777776,6,4,9.0,6.0,"{""Navegna Lago"": 2, ""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.4,True
+indicator,2,coherence -> appropriation_publicness,unmarked -> unmarked,0.42777777777777776,4,4,2.5,1.5,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1}",0.4,True
+indicator,2,continuity -> participative_governance,unmarked -> unmarked,3.138888888888889,9,3,11.222222222222221,8.0,"{""Navegna Lago"": 6, ""Simen x Paoli"": 2, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,coherence -> complexity,unmarked -> unmarked,2.85,6,3,4.333333333333333,4.5,"{""Navegna Lago"": 2, ""Crocifisso"": 1, ""Ponte Navegna"": 3}",0.3,True
+indicator,2,participative_governance -> participative_governance,unmarked -> unmarked,2.683333333333333,8,3,13.125,13.0,"{""Navegna Lago"": 4, ""Simen x Paoli"": 2, ""Ponte Navegna"": 2}",0.3,True
+indicator,2,interactions/vitality -> distinctiveness,unmarked -> unmarked,2.645833333333333,12,3,9.75,6.0,"{""Via Mezzaro"": 6, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 4}",0.3,True
+indicator,2,accessibility -> safety_comfort,unmarked -> unmarked,2.4166666666666665,6,3,3.1666666666666665,2.5,"{""Mulino San Martino / Parco Vicolo della Roggia"": 2, ""Via Mezzaro"": 1, ""Chiesa, Via San Gottardo"": 3}",0.3,True
+indicator,2,beauty -> carrying_capacity,unmarked -> unmarked,2.3333333333333335,6,3,13.166666666666666,10.0,"{""Navegna Lago"": 4, ""Simen x Paoli"": 1, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,coherence -> compatibility,unmarked -> unmarked,2.3333333333333335,6,3,3.3333333333333335,2.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 3}",0.3,True
+indicator,2,resource_regime -> interactions/vitality,unmarked -> unmarked,2.333333333333333,5,3,7.6,2.0,"{""Via Mezzaro"": 3, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,carrying_capacity -> continuity,unmarked -> unmarked,2.1416666666666666,7,3,15.428571428571429,10.0,"{""Via Mezzaro"": 1, ""Chiesa, Via San Gottardo"": 5, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,morphology -> morphology,unmarked -> unmarked,2.0416666666666665,5,3,15.0,9.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 2, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,nature -> resource_regime,unmarked -> unmarked,2.011111111111111,6,3,12.166666666666666,7.0,"{""Navegna Lago"": 3, ""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,coherence -> participative_governance,unmarked -> unmarked,2.0,4,3,6.5,5.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""Ponte Navegna"": 2}",0.3,True
+indicator,2,continuity -> cultural_identity,unmarked -> unmarked,1.9666666666666666,5,3,6.0,2.0,"{""Simen x Paoli"": 2, ""Via Mezzaro"": 1, ""Ponte Navegna"": 2}",0.3,True
+indicator,2,continuity -> familiarity,unmarked -> unmarked,1.9166666666666665,6,3,17.5,15.0,"{""Simen x Paoli"": 2, ""Chiesa, Via San Gottardo"": 3, ""Scuola Elementare, Via Frizzi"": 1}",0.3,True
+indicator,2,appropriation_publicness -> nature,unmarked -> unmarked,1.8194444444444444,7,3,3.7142857142857144,4.0,"{""Navegna Lago"": 5, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,cultural_identity -> continuity,unmarked -> unmarked,1.8194444444444444,5,3,10.6,6.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""Ponte Navegna"": 3}",0.3,True
+indicator,2,ambience -> nature,unmarked -> unmarked,1.786111111111111,8,3,8.0,7.0,"{""Navegna Lago"": 5, ""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,compatibility -> nature,unmarked -> unmarked,1.7194444444444443,6,3,7.0,5.0,"{""Navegna Lago"": 2, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Ponte Navegna"": 3}",0.3,True
+indicator,2,resource_regime -> resource_regime,unmarked -> unmarked,1.6944444444444444,4,3,8.25,6.5,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,environment -> crossability,unmarked -> unmarked,1.6666666666666667,4,3,2.0,1.0,"{""Crocifisso"": 1, ""Simen x Paoli"": 1, ""Ponte Navegna"": 2}",0.3,True
+indicator,2,familiarity -> familiarity,unmarked -> unmarked,1.6666666666666665,4,3,13.5,6.0,"{""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,environment -> coherence,unmarked -> unmarked,1.6583333333333332,6,3,3.6666666666666665,4.0,"{""Crocifisso"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 4}",0.3,True
+indicator,2,environment -> ambience,unmarked -> unmarked,1.6277777777777778,10,3,2.3,2.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 8, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,nature -> familiarity,unmarked -> unmarked,1.6111111111111112,3,3,6.666666666666667,6.0,"{""Crocifisso"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,participative_governance -> continuity,unmarked -> unmarked,1.5722222222222222,8,3,9.125,8.5,"{""Navegna Lago"": 5, ""Simen x Paoli"": 2, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,carrying_capacity -> carrying_capacity,unmarked -> unmarked,1.5566666666666666,5,3,15.6,12.0,"{""Navegna Lago"": 1, ""Chiesa, Via San Gottardo"": 2, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,nature -> beauty,unmarked -> unmarked,1.5566666666666666,5,3,12.0,6.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 3}",0.3,True
+indicator,2,coherence -> nature,unmarked -> unmarked,1.5138888888888888,7,3,4.428571428571429,6.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 4, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,beauty -> interactions/vitality,unmarked -> unmarked,1.4583333333333333,7,3,4.571428571428571,2.0,"{""Navegna Lago"": 2, ""Via Mezzaro"": 3, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,crossability -> safety_comfort,unmarked -> unmarked,1.4444444444444444,6,3,8.166666666666666,4.5,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 4, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,participative_governance -> nature,unmarked -> unmarked,1.4333333333333333,5,3,15.4,14.0,"{""Navegna Lago"": 3, ""Simen x Paoli"": 1, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,safety_comfort -> interactions/vitality,unmarked -> unmarked,1.4166666666666665,4,3,10.5,6.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 2, ""Via Mezzaro"": 1, ""Scuola Elementare, Via Frizzi"": 1}",0.3,True
+indicator,2,continuity -> morphology,unmarked -> unmarked,1.3333333333333333,5,3,4.0,6.0,"{""Navegna Lago"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Ponte Navegna"": 3}",0.3,True
+indicator,2,interactions/vitality -> accessibility,unmarked -> unmarked,1.3333333333333333,3,3,14.333333333333334,9.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,safety_comfort -> environment,unmarked -> unmarked,1.3333333333333333,6,3,14.166666666666666,1.5,"{""Ponte Navegna"": 2, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 3}",0.3,True
+indicator,2,beauty -> environment,unmarked -> unmarked,1.3166666666666667,6,3,4.333333333333333,2.0,"{""Simen x Paoli"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 4}",0.3,True
+indicator,2,compatibility -> beauty,unmarked -> unmarked,1.3166666666666667,6,3,17.666666666666668,12.0,"{""Navegna Lago"": 4, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,familiarity -> safety_comfort,unmarked -> unmarked,1.2916666666666665,4,3,2.5,1.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 2, ""Ponte Navegna"": 1, ""Scuola Elementare, Via Frizzi"": 1}",0.3,True
+indicator,2,distinctiveness -> cultural heritage,unmarked -> unmarked,1.286111111111111,5,3,4.6,5.0,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 2, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,coherence -> openness_enclosure,unmarked -> unmarked,1.2777777777777777,4,3,25.25,12.0,"{""Simen x Paoli"": 2, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,familiarity -> continuity,unmarked -> unmarked,1.2666666666666666,6,3,20.833333333333332,18.5,"{""Chiesa, Via San Gottardo"": 4, ""Panorama, Via dei Colli"": 1, ""Scuola Elementare, Via Frizzi"": 1}",0.3,True
+indicator,2,carrying_capacity -> ambience,unmarked -> unmarked,1.24,5,3,13.2,10.0,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 3}",0.3,True
+indicator,2,interactions/vitality -> Mixed_uses,unmarked -> unmarked,1.1944444444444444,5,3,5.2,3.0,"{""Via Mezzaro"": 2, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,safety_comfort -> familiarity,unmarked -> unmarked,1.1666666666666665,3,3,2.6666666666666665,0.0,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,distinctiveness -> resource_regime,unmarked -> unmarked,1.15,4,3,41.25,25.5,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,nature -> coherence,unmarked -> unmarked,1.1388888888888888,6,3,7.333333333333333,7.5,"{""Navegna Lago"": 3, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,resource_regime -> appropriation_publicness,unmarked -> unmarked,1.0833333333333333,4,3,7.25,5.5,"{""Navegna Lago"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,compatibility -> crossability,unmarked -> unmarked,1.0694444444444444,6,3,11.333333333333334,8.5,"{""Via Mezzaro"": 4, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,environment -> safety_comfort,unmarked -> unmarked,1.0694444444444444,5,3,7.2,3.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 3, ""Chiesa, Via San Gottardo"": 1}",0.3,True
+indicator,2,morphology -> distinctiveness,unmarked -> unmarked,1.0416666666666665,4,3,10.0,5.5,"{""Navegna Lago"": 2, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,nature -> compatibility,unmarked -> unmarked,1.027777777777778,5,3,7.0,3.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,Mixed_uses -> continuity,unmarked -> unmarked,1.0,4,3,6.25,4.0,"{""Navegna Lago"": 2, ""Via Mezzaro"": 1, ""Chiesa, Via San Gottardo"": 1}",0.3,True
+indicator,2,participative_governance -> environment,unmarked -> unmarked,1.0,4,3,8.75,8.5,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""Ponte Navegna"": 2}",0.3,True
+indicator,2,safety_comfort -> carrying_capacity,unmarked -> unmarked,0.9999999999999999,4,3,7.75,7.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,coherence -> ambience,unmarked -> unmarked,0.9666666666666667,5,3,6.4,6.0,"{""Navegna Lago"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Ponte Navegna"": 3}",0.3,True
+indicator,2,environment -> compatibility,unmarked -> unmarked,0.9583333333333333,4,3,9.0,5.5,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 2}",0.3,True
+indicator,2,nature -> authenticity,unmarked -> unmarked,0.9249999999999999,5,3,5.4,6.0,"{""After Via dei Colli / Before Mezzaro"": 2, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 2}",0.3,True
+indicator,2,participative_governance -> compatibility,unmarked -> unmarked,0.9166666666666667,4,3,12.0,11.0,"{""Navegna Lago"": 2, ""Simen x Paoli"": 1, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,crossability -> beauty,unmarked -> unmarked,0.8916666666666667,6,3,8.333333333333334,5.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 3, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,beauty -> cultural heritage,unmarked -> unmarked,0.8888888888888888,4,3,8.5,9.5,"{""Ponte Navegna"": 2, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,cultural heritage -> morphology,unmarked -> unmarked,0.8888888888888888,4,3,6.5,6.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Ponte Navegna"": 2}",0.3,True
+indicator,2,appropriation_publicness -> compatibility,unmarked -> unmarked,0.875,6,3,12.833333333333334,7.5,"{""Navegna Lago"": 3, ""Simen x Paoli"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 2}",0.3,True
+indicator,2,carrying_capacity -> environment,unmarked -> unmarked,0.875,4,3,23.0,9.0,"{""Simen x Paoli"": 1, ""Chiesa, Via San Gottardo"": 2, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,familiarity -> beauty,unmarked -> unmarked,0.875,3,3,3.3333333333333335,3.0,"{""Simen x Paoli"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 1}",0.3,True
+indicator,2,authenticity -> authenticity,unmarked -> unmarked,0.8666666666666667,7,3,5.0,6.0,"{""Navegna Lago"": 2, ""After Via dei Colli / Before Mezzaro"": 3, ""Via Mezzaro"": 2}",0.3,True
+indicator,2,appropriation_publicness -> appropriation_publicness,unmarked -> unmarked,0.861111111111111,5,3,4.2,2.0,"{""Navegna Lago"": 2, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,compatibility -> distinctiveness,unmarked -> unmarked,0.8333333333333333,4,3,6.5,6.5,"{""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,authenticity -> compatibility,unmarked -> unmarked,0.8166666666666667,3,3,46.0,2.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,continuity -> legibility,unmarked -> unmarked,0.8111111111111111,4,3,13.5,3.0,"{""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,distinctiveness -> ambience,unmarked -> unmarked,0.8111111111111111,5,3,4.8,6.0,"{""Navegna Lago"": 3, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,nature -> cultural_identity,unmarked -> unmarked,0.8,3,3,4.666666666666667,4.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,continuity -> Mixed_uses,unmarked -> unmarked,0.7833333333333333,4,3,8.75,5.5,"{""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,fascination -> environment,unmarked -> unmarked,0.7833333333333333,4,3,11.0,11.0,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 2}",0.3,True
+indicator,2,interactions/vitality -> resource_regime,unmarked -> unmarked,0.7777777777777778,3,3,11.0,5.0,"{""Navegna Lago"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,coherence -> cultural heritage,unmarked -> unmarked,0.7722222222222223,4,3,2.25,1.5,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,beauty -> accessibility,unmarked -> unmarked,0.7666666666666666,4,3,3.0,2.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""Via Mezzaro"": 2}",0.3,True
+indicator,2,mystery -> morphology,unmarked -> unmarked,0.7666666666666666,3,3,10.666666666666666,8.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,nature -> morphology,unmarked -> unmarked,0.7527777777777778,5,3,4.6,6.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,compatibility -> ambience,unmarked -> unmarked,0.7416666666666667,4,3,7.75,7.0,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,safety_comfort -> mystery,unmarked -> unmarked,0.725,4,3,3.25,3.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 2, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,morphology -> cultural heritage,unmarked -> unmarked,0.7222222222222222,3,3,2.0,3.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,authenticity -> nature,unmarked -> unmarked,0.7194444444444444,6,3,6.166666666666667,5.5,"{""After Via dei Colli / Before Mezzaro"": 4, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,distinctiveness -> Mixed_uses,unmarked -> unmarked,0.7083333333333333,4,3,3.25,2.5,"{""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,compatibility -> Mixed_uses,unmarked -> unmarked,0.6944444444444444,3,3,6.0,0.0,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,resource_regime -> cultural identity,unmarked -> unmarked,0.6944444444444444,3,3,3.6666666666666665,5.0,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,cultural heritage -> coherence,unmarked -> unmarked,0.6638888888888889,5,3,3.0,3.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 2}",0.3,True
+indicator,2,mystery -> continuity,unmarked -> unmarked,0.6444444444444444,4,3,4.25,3.0,"{""Ponte Navegna"": 2, ""Chiesa, Via San Gottardo"": 1, ""Scuola Elementare, Via Frizzi"": 1}",0.3,True
+indicator,2,complexity -> nature,unmarked -> unmarked,0.6333333333333333,3,3,1.3333333333333333,0.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,nature -> mystery,unmarked -> unmarked,0.6333333333333333,3,3,1.0,0.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,carrying_capacity -> coherence,unmarked -> unmarked,0.625,3,3,47.333333333333336,54.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,morphology -> mystery,unmarked -> unmarked,0.625,4,3,11.0,2.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,safety_comfort -> distinctiveness,unmarked -> unmarked,0.625,4,3,26.25,13.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,morphology -> legibility,unmarked -> unmarked,0.611111111111111,3,3,16.0,8.0,"{""Simen x Paoli"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,distinctiveness -> compatibility,unmarked -> unmarked,0.6,4,3,4.5,1.0,"{""Via Mezzaro"": 2, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,mystery -> distinctiveness,unmarked -> unmarked,0.6,4,3,9.5,7.0,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 2, ""Via Mezzaro"": 1}",0.3,True
+indicator,2,resource_regime -> safety_comfort,unmarked -> unmarked,0.6,4,3,20.5,21.5,"{""Navegna Lago"": 2, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,carrying_capacity -> safety_comfort,unmarked -> unmarked,0.5833333333333333,3,3,11.666666666666666,12.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,environment -> distinctiveness,unmarked -> unmarked,0.5833333333333333,4,3,6.25,6.5,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 2}",0.3,True
+indicator,2,morphology -> nature,unmarked -> unmarked,0.5833333333333333,4,3,3.75,3.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,beauty -> familiarity,unmarked -> unmarked,0.5611111111111111,3,3,6.0,3.0,"{""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 1, ""Scuola Elementare, Via Frizzi"": 1}",0.3,True
+indicator,2,authenticity -> coherence,unmarked -> unmarked,0.5527777777777778,4,3,6.0,2.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 2, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,accessibility -> appropriation_publicness,unmarked -> unmarked,0.5416666666666666,3,3,71.33333333333333,3.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,carrying_capacity -> nature,unmarked -> unmarked,0.5416666666666666,3,3,28.333333333333332,7.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,morphology -> crossability,unmarked -> unmarked,0.5416666666666666,6,3,4.166666666666667,2.5,"{""Simen x Paoli"": 1, ""Ponte Navegna"": 4, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,appropriation_publicness -> resource_regime,unmarked -> unmarked,0.5277777777777778,3,3,11.0,5.0,"{""Navegna Lago"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,continuity -> crossability,unmarked -> unmarked,0.5,3,3,5.333333333333333,6.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,nature -> carrying_capacity,unmarked -> unmarked,0.48444444444444446,4,3,11.5,8.0,"{""Navegna Lago"": 1, ""Chiesa, Via San Gottardo"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,morphology -> accessibility,unmarked -> unmarked,0.4583333333333333,5,3,3.6,3.0,"{""Simen x Paoli"": 1, ""Ponte Navegna"": 3, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,beauty -> scale,unmarked -> unmarked,0.4444444444444444,3,3,26.333333333333332,12.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,mystery -> environment,unmarked -> unmarked,0.44166666666666665,3,3,1.3333333333333333,0.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,appropriation_publicness -> distinctiveness,unmarked -> unmarked,0.41666666666666663,3,3,9.333333333333334,6.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,crossability -> cultural heritage,unmarked -> unmarked,0.41666666666666663,3,3,11.0,8.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""After Via dei Colli / Before Mezzaro"": 1}",0.3,True
+indicator,2,beauty -> morphology,unmarked -> unmarked,0.4083333333333333,3,3,5.333333333333333,4.0,"{""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1, ""Scuola Elementare, Via Frizzi"": 1}",0.3,True
+indicator,2,nature -> appropriation_publicness,unmarked -> unmarked,0.40277777777777773,4,3,4.25,4.5,"{""Simen x Paoli"": 1, ""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,morphology -> beauty,unmarked -> unmarked,0.375,3,3,10.333333333333334,4.0,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,appropriation_publicness -> safety_comfort,unmarked -> unmarked,0.36111111111111105,3,3,25.333333333333332,24.0,"{""Navegna Lago"": 1, ""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,carrying_capacity -> distinctiveness,unmarked -> unmarked,0.3594444444444444,4,3,27.25,18.5,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 2}",0.3,True
+indicator,2,distinctiveness -> complexity,unmarked -> unmarked,0.34444444444444444,3,3,9.333333333333334,4.0,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,Mixed_uses -> nature,unmarked -> unmarked,0.3333333333333333,3,3,3.3333333333333335,3.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,accessibility -> beauty,unmarked -> unmarked,0.3333333333333333,3,3,14.666666666666666,16.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,interactions/vitality -> nature,unmarked -> unmarked,0.3333333333333333,3,3,3.3333333333333335,3.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,beauty -> authenticity,unmarked -> unmarked,0.3277777777777778,3,3,3.3333333333333335,3.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,cultural heritage -> compatibility,unmarked -> unmarked,0.275,3,3,54.333333333333336,15.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,Mixed_uses -> beauty,unmarked -> unmarked,0.2708333333333333,3,3,0.6666666666666666,0.0,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.3,True
+indicator,2,appropriation_publicness -> carrying_capacity,unmarked -> unmarked,0.26666666666666666,3,3,21.666666666666668,26.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1, ""Chiesa, Via San Gottardo"": 1}",0.3,True
+indicator,2,nature -> fascination,unmarked -> unmarked,0.22777777777777777,3,3,1.0,0.0,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 1}",0.3,True
+indicator,2,cultural heritage -> cultural heritage,unmarked -> unmarked,2.25,4,2,16.5,15.0,"{""Crocifisso"": 2, ""Mulino San Martino / Parco Vicolo della Roggia"": 2}",0.2,True
+indicator,2,distinctiveness -> interactions/vitality,unmarked -> unmarked,2.075,9,2,6.222222222222222,2.0,"{""Via Mezzaro"": 5, ""Panorama, Via dei Colli"": 4}",0.2,True
+indicator,2,participative_governance -> coherence,unmarked -> unmarked,1.95,5,2,8.0,9.0,"{""Navegna Lago"": 3, ""Ponte Navegna"": 2}",0.2,True
+indicator,2,ambience -> environment,unmarked -> unmarked,1.863888888888889,9,2,5.666666666666667,2.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 8}",0.2,True
+indicator,2,environment -> morphology,unmarked -> unmarked,1.7083333333333333,6,2,3.8333333333333335,3.0,"{""Ponte Navegna"": 4, ""Panorama, Via dei Colli"": 2}",0.2,True
+indicator,2,fascination -> continuity,unmarked -> unmarked,1.5833333333333333,4,2,10.0,10.5,"{""Navegna Lago"": 3, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,safety_comfort -> accessibility,unmarked -> unmarked,1.5833333333333333,4,2,5.0,6.0,"{""Via Mezzaro"": 1, ""Chiesa, Via San Gottardo"": 3}",0.2,True
+indicator,2,morphology -> coherence,unmarked -> unmarked,1.5694444444444444,4,2,7.0,8.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 2, ""Ponte Navegna"": 2}",0.2,True
+indicator,2,carrying_capacity -> beauty,unmarked -> unmarked,1.54,4,2,32.75,37.5,"{""Navegna Lago"": 3, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,resource_regime -> beauty,unmarked -> unmarked,1.4166666666666667,3,2,15.0,16.0,"{""Navegna Lago"": 2, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,crossability -> nature,unmarked -> unmarked,1.375,6,2,2.3333333333333335,2.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 5}",0.2,True
+indicator,2,accessibility -> nature,unmarked -> unmarked,1.2916666666666665,5,2,3.2,4.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 4}",0.2,True
+indicator,2,nature -> cultural identity,unmarked -> unmarked,1.2777777777777777,3,2,13.0,11.0,"{""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,legibility -> legibility,unmarked -> unmarked,1.2694444444444444,6,2,23.833333333333332,22.0,"{""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 5}",0.2,True
+indicator,2,complexity -> safety_comfort,unmarked -> unmarked,1.25,2,2,2.0,2.0,"{""Crocifisso"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,scale -> safety_comfort,unmarked -> unmarked,1.25,2,2,3.0,3.0,"{""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,interactions/vitality -> legibility,unmarked -> unmarked,1.2333333333333334,4,2,9.25,6.0,"{""Via Mezzaro"": 2, ""Panorama, Via dei Colli"": 2}",0.2,True
+indicator,2,continuity -> accessibility,unmarked -> unmarked,1.2083333333333333,5,2,3.8,3.0,"{""Via Mezzaro"": 1, ""Chiesa, Via San Gottardo"": 4}",0.2,True
+indicator,2,legibility -> continuity,unmarked -> unmarked,1.2083333333333333,6,2,19.0,22.0,"{""Via Mezzaro"": 2, ""Panorama, Via dei Colli"": 4}",0.2,True
+indicator,2,accessibility -> environment,unmarked -> unmarked,1.1833333333333333,4,2,38.25,9.0,"{""Ponte Navegna"": 3, ""Chiesa, Via San Gottardo"": 1}",0.2,True
+indicator,2,legibility -> mystery,unmarked -> unmarked,1.1666666666666667,2,2,29.5,29.5,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,familiarity -> ambience,unmarked -> unmarked,1.125,3,2,3.6666666666666665,3.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 2, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,coherence -> safety_comfort,unmarked -> unmarked,1.0833333333333333,4,2,2.5,1.5,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 3}",0.2,True
+indicator,2,crossability -> coherence,unmarked -> unmarked,1.0833333333333333,5,2,4.2,2.0,"{""Via Mezzaro"": 2, ""Ponte Navegna"": 3}",0.2,True
+indicator,2,complexity -> coherence,unmarked -> unmarked,1.0666666666666667,5,2,4.6,6.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 4}",0.2,True
+indicator,2,scale -> fascination,unmarked -> unmarked,1.0555555555555556,2,2,4.5,4.5,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,nature -> openness_enclosure,unmarked -> unmarked,1.04,2,2,17.5,17.5,"{""Simen x Paoli"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,openness_enclosure -> openness_enclosure,unmarked -> unmarked,1.04,2,2,17.0,17.0,"{""Simen x Paoli"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,compatibility -> participative_governance,unmarked -> unmarked,1.0333333333333332,4,2,12.75,12.5,"{""Navegna Lago"": 3, ""Simen x Paoli"": 1}",0.2,True
+indicator,2,appropriation_publicness -> continuity,unmarked -> unmarked,1.0166666666666666,6,2,5.666666666666667,4.0,"{""Navegna Lago"": 5, ""Chiesa, Via San Gottardo"": 1}",0.2,True
+indicator,2,Mixed_uses -> accessibility,unmarked -> unmarked,1.0,2,2,21.0,21.0,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,accessibility -> carrying_capacity,unmarked -> unmarked,1.0,3,2,3.6666666666666665,3.0,"{""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 2}",0.2,True
+indicator,2,ambience -> familiarity,unmarked -> unmarked,1.0,3,2,1.3333333333333333,0.0,"{""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,distinctiveness -> openness_enclosure,unmarked -> unmarked,1.0,3,2,23.0,30.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 2}",0.2,True
+indicator,2,safety_comfort -> ambience,unmarked -> unmarked,0.986111111111111,6,2,3.5,1.0,"{""Ponte Navegna"": 3, ""Panorama, Via dei Colli"": 3}",0.2,True
+indicator,2,resource_regime -> nature,unmarked -> unmarked,0.9333333333333333,4,2,18.75,19.5,"{""Navegna Lago"": 3, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,environment -> accessibility,unmarked -> unmarked,0.875,3,2,1.3333333333333333,2.0,"{""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 2}",0.2,True
+indicator,2,carrying_capacity -> interactions/vitality,unmarked -> unmarked,0.8333333333333333,2,2,4.0,4.0,"{""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,coherence -> resource_regime,unmarked -> unmarked,0.8333333333333333,3,2,7.666666666666667,3.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 2}",0.2,True
+indicator,2,coherence -> scale,unmarked -> unmarked,0.8333333333333333,3,2,24.333333333333332,6.0,"{""Navegna Lago"": 2, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,crossability -> compatibility,unmarked -> unmarked,0.8333333333333333,3,2,12.333333333333334,11.0,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 2}",0.2,True
+indicator,2,coherence -> fascination,unmarked -> unmarked,0.8055555555555556,4,2,3.75,3.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 3}",0.2,True
+indicator,2,Mixed_uses -> distinctiveness,unmarked -> unmarked,0.7708333333333334,4,2,6.75,1.5,"{""Via Mezzaro"": 2, ""Ponte Navegna"": 2}",0.2,True
+indicator,2,mystery -> interactions/vitality,unmarked -> unmarked,0.7666666666666666,3,2,6.666666666666667,8.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 2, ""Scuola Elementare, Via Frizzi"": 1}",0.2,True
+indicator,2,carrying_capacity -> accessibility,unmarked -> unmarked,0.75,3,2,4.666666666666667,6.0,"{""Navegna Lago"": 1, ""Chiesa, Via San Gottardo"": 2}",0.2,True
+indicator,2,familiarity -> nature,unmarked -> unmarked,0.75,2,2,19.5,19.5,"{""Simen x Paoli"": 1, ""Chiesa, Via San Gottardo"": 1}",0.2,True
+indicator,2,complexity -> ambience,unmarked -> unmarked,0.725,3,2,2.0,0.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 2}",0.2,True
+indicator,2,coherence -> crossability,unmarked -> unmarked,0.7,4,2,4.5,3.0,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 3}",0.2,True
+indicator,2,cultural_identity -> resource_regime,unmarked -> unmarked,0.7,2,2,59.5,59.5,"{""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,distinctiveness -> carrying_capacity,unmarked -> unmarked,0.6944444444444444,3,2,6.333333333333333,3.0,"{""Navegna Lago"": 2, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,nature -> participative_governance,unmarked -> unmarked,0.6833333333333333,3,2,9.0,4.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 2}",0.2,True
+indicator,2,continuity -> mystery,unmarked -> unmarked,0.6777777777777778,3,2,3.0,3.0,"{""Ponte Navegna"": 2, ""Chiesa, Via San Gottardo"": 1}",0.2,True
+indicator,2,accessibility -> coherence,unmarked -> unmarked,0.6666666666666666,4,2,8.5,9.0,"{""Simen x Paoli"": 1, ""Ponte Navegna"": 3}",0.2,True
+indicator,2,crossability -> participative_governance,unmarked -> unmarked,0.6666666666666666,2,2,15.0,15.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1}",0.2,True
+indicator,2,familiarity -> legibility,unmarked -> unmarked,0.6666666666666666,2,2,8.0,8.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,environment -> authenticity,unmarked -> unmarked,0.6527777777777778,4,2,4.0,4.5,"{""After Via dei Colli / Before Mezzaro"": 2, ""Ponte Navegna"": 2}",0.2,True
+indicator,2,legibility -> interactions/vitality,unmarked -> unmarked,0.6527777777777778,4,2,18.25,17.5,"{""Via Mezzaro"": 2, ""Panorama, Via dei Colli"": 2}",0.2,True
+indicator,2,fascination -> coherence,unmarked -> unmarked,0.6333333333333333,4,2,5.75,4.0,"{""Navegna Lago"": 2, ""Ponte Navegna"": 2}",0.2,True
+indicator,2,distinctiveness -> participative_governance,unmarked -> unmarked,0.625,2,2,15.0,15.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,legibility -> familiarity,unmarked -> unmarked,0.625,2,2,1.5,1.5,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,compatibility -> continuity,unmarked -> unmarked,0.6166666666666667,3,2,10.666666666666666,10.0,"{""Navegna Lago"": 2, ""Via Mezzaro"": 1}",0.2,True
+indicator,2,interactions/vitality -> participative_governance,unmarked -> unmarked,0.6111111111111112,2,2,6.5,6.5,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1}",0.2,True
+indicator,2,legibility -> ambience,unmarked -> unmarked,0.6111111111111112,2,2,16.0,16.0,"{""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,resource_regime -> participative_governance,unmarked -> unmarked,0.6,3,2,12.333333333333334,16.0,"{""Navegna Lago"": 2, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,crossability -> carrying_capacity,unmarked -> unmarked,0.5833333333333334,2,2,3.0,3.0,"{""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,openness_enclosure -> nature,unmarked -> unmarked,0.5833333333333334,2,2,7.0,7.0,"{""Simen x Paoli"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,resource_regime -> ambience,unmarked -> unmarked,0.5833333333333334,2,2,12.0,12.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1}",0.2,True
+indicator,2,carrying_capacity -> morphology,unmarked -> unmarked,0.5694444444444444,3,2,21.666666666666668,20.0,"{""Navegna Lago"": 2, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,Mixed_uses -> legibility,unmarked -> unmarked,0.5666666666666667,3,2,3.0,3.0,"{""Via Mezzaro"": 2, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,cultural heritage -> authenticity,unmarked -> unmarked,0.5666666666666667,3,2,3.0,0.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 2}",0.2,True
+indicator,2,mystery -> legibility,unmarked -> unmarked,0.5666666666666667,2,2,9.0,9.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,environment -> beauty,unmarked -> unmarked,0.5555555555555556,5,2,2.4,0.0,"{""Ponte Navegna"": 4, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,environment -> fascination,unmarked -> unmarked,0.5416666666666666,5,2,3.6,3.0,"{""Navegna Lago"": 2, ""Ponte Navegna"": 3}",0.2,True
+indicator,2,accessibility -> distinctiveness,unmarked -> unmarked,0.5333333333333333,4,2,4.0,4.0,"{""Via Mezzaro"": 3, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,crossability -> resource_regime,unmarked -> unmarked,0.5277777777777778,3,2,9.333333333333334,6.0,"{""Navegna Lago"": 2, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,beauty -> Mixed_uses,unmarked -> unmarked,0.5,2,2,2.0,2.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1}",0.2,True
+indicator,2,beauty -> resource_regime,unmarked -> unmarked,0.5,2,2,11.5,11.5,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,compatibility -> environment,unmarked -> unmarked,0.5,2,2,5.0,5.0,"{""Simen x Paoli"": 1, ""Chiesa, Via San Gottardo"": 1}",0.2,True
+indicator,2,cultural heritage -> safety_comfort,unmarked -> unmarked,0.5,2,2,18.5,18.5,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1}",0.2,True
+indicator,2,familiarity -> environment,unmarked -> unmarked,0.5,2,2,10.5,10.5,"{""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1}",0.2,True
+indicator,2,resource_regime -> Mixed_uses,unmarked -> unmarked,0.5,2,2,8.0,8.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,openness_enclosure -> ambience,unmarked -> unmarked,0.49,3,2,15.333333333333334,10.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 2}",0.2,True
+indicator,2,ambience -> morphology,unmarked -> unmarked,0.4861111111111111,3,2,1.6666666666666667,2.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 2}",0.2,True
+indicator,2,participative_governance -> authenticity,unmarked -> unmarked,0.4861111111111111,3,2,8.666666666666666,7.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 2}",0.2,True
+indicator,2,participative_governance -> resource_regime,unmarked -> unmarked,0.47777777777777775,3,2,21.666666666666668,18.0,"{""Navegna Lago"": 2, ""Simen x Paoli"": 1}",0.2,True
+indicator,2,coherence -> legibility,unmarked -> unmarked,0.4666666666666667,3,2,8.333333333333334,6.0,"{""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,ambience -> accessibility,unmarked -> unmarked,0.4583333333333333,3,2,5.0,3.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 2}",0.2,True
+indicator,2,legibility -> cultural_identity,unmarked -> unmarked,0.4583333333333333,2,2,1.5,1.5,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 1}",0.2,True
+indicator,2,authenticity -> resource_regime,unmarked -> unmarked,0.4444444444444444,2,2,18.0,18.0,"{""Simen x Paoli"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,ambience -> scale,unmarked -> unmarked,0.43333333333333335,3,2,4.0,3.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 2}",0.2,True
+indicator,2,crossability -> environment,unmarked -> unmarked,0.43333333333333335,3,2,6.0,2.0,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 2}",0.2,True
+indicator,2,safety_comfort -> scale,unmarked -> unmarked,0.43333333333333335,3,2,4.0,3.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Via Mezzaro"": 2}",0.2,True
+indicator,2,accessibility -> inclusivity,unmarked -> unmarked,0.41666666666666663,2,2,105.5,105.5,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1}",0.2,True
+indicator,2,accessibility -> mystery,unmarked -> unmarked,0.41666666666666663,2,2,5.5,5.5,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1}",0.2,True
+indicator,2,coherence -> familiarity,unmarked -> unmarked,0.41666666666666663,2,2,5.0,5.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,mystery -> safety_comfort,unmarked -> unmarked,0.41666666666666663,2,2,2.0,2.0,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,distinctiveness -> cultural identity,unmarked -> unmarked,0.4027777777777778,3,2,16.666666666666668,19.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 2}",0.2,True
+indicator,2,nature -> legibility,unmarked -> unmarked,0.39999999999999997,2,2,0.0,0.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Via Mezzaro"": 1}",0.2,True
+indicator,2,distinctiveness -> fascination,unmarked -> unmarked,0.3833333333333333,2,2,4.0,4.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,ambience -> fascination,unmarked -> unmarked,0.375,4,2,4.5,4.5,"{""Navegna Lago"": 2, ""Ponte Navegna"": 2}",0.2,True
+indicator,2,compatibility -> accessibility,unmarked -> unmarked,0.375,2,2,8.5,8.5,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,complexity -> environment,unmarked -> unmarked,0.375,2,2,2.0,2.0,"{""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,cultural_identity -> accessibility,unmarked -> unmarked,0.375,2,2,7.5,7.5,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 1}",0.2,True
+indicator,2,cultural_identity -> distinctiveness,unmarked -> unmarked,0.375,2,2,4.5,4.5,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 1}",0.2,True
+indicator,2,familiarity -> distinctiveness,unmarked -> unmarked,0.375,2,2,3.5,3.5,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 1}",0.2,True
+indicator,2,appropriation_publicness -> participative_governance,unmarked -> unmarked,0.3611111111111111,3,2,11.333333333333334,5.0,"{""Navegna Lago"": 2, ""Simen x Paoli"": 1}",0.2,True
+indicator,2,cultural heritage -> resource_regime,unmarked -> unmarked,0.3611111111111111,2,2,27.0,27.0,"{""Simen x Paoli"": 1, ""Via Mezzaro"": 1}",0.2,True
+indicator,2,nature -> cultural heritage,unmarked -> unmarked,0.3611111111111111,2,2,6.0,6.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,ambience -> complexity,unmarked -> unmarked,0.35,2,2,3.0,3.0,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,complexity -> complexity,unmarked -> unmarked,0.35,3,2,6.0,6.0,"{""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,fascination -> beauty,unmarked -> unmarked,0.35,2,2,6.5,6.5,"{""Simen x Paoli"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,resource_regime -> distinctiveness,unmarked -> unmarked,0.35,2,2,10.5,10.5,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,authenticity -> environment,unmarked -> unmarked,0.34444444444444444,4,2,40.5,13.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 3}",0.2,True
+indicator,2,local_solutions -> distinctiveness,unmarked -> unmarked,0.34444444444444444,3,2,2.6666666666666665,0.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Via Mezzaro"": 2}",0.2,True
+indicator,2,ambience -> authenticity,unmarked -> unmarked,0.3416666666666667,3,2,4.0,6.0,"{""Via Mezzaro"": 2, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,distinctiveness -> cultural_identity,unmarked -> unmarked,0.3375,4,2,0.75,0.0,"{""Via Mezzaro"": 3, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,complexity -> distinctiveness,unmarked -> unmarked,0.33333333333333337,3,2,9.333333333333334,4.0,"{""Via Mezzaro"": 2, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,appropriation_publicness -> accessibility,unmarked -> unmarked,0.3333333333333333,2,2,3.5,3.5,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1}",0.2,True
+indicator,2,appropriation_publicness -> authenticity,unmarked -> unmarked,0.3333333333333333,2,2,5.5,5.5,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1}",0.2,True
+indicator,2,appropriation_publicness -> crossability,unmarked -> unmarked,0.3333333333333333,2,2,3.5,3.5,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1}",0.2,True
+indicator,2,appropriation_publicness -> fascination,unmarked -> unmarked,0.3333333333333333,2,2,7.0,7.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1}",0.2,True
+indicator,2,fascination -> compatibility,unmarked -> unmarked,0.3333333333333333,3,2,10.333333333333334,12.0,"{""Navegna Lago"": 2, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,resource_regime -> carrying_capacity,unmarked -> unmarked,0.3333333333333333,2,2,29.0,29.0,"{""Navegna Lago"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,resource_regime -> compatibility,unmarked -> unmarked,0.3333333333333333,2,2,33.0,33.0,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1}",0.2,True
+indicator,2,coherence -> local_solutions,unmarked -> unmarked,0.3277777777777777,3,2,10.666666666666666,10.0,"{""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 2}",0.2,True
+indicator,2,morphology -> appropriation_publicness,unmarked -> unmarked,0.3194444444444444,4,2,11.5,5.0,"{""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 2}",0.2,True
+indicator,2,scale -> ambience,unmarked -> unmarked,0.31666666666666665,2,2,6.0,6.0,"{""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,cultural identity -> beauty,unmarked -> unmarked,0.3125,3,2,4.0,6.0,"{""Via Mezzaro"": 2, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,accessibility -> resource_regime,unmarked -> unmarked,0.3111111111111111,2,2,7.5,7.5,"{""Navegna Lago"": 1, ""Via Mezzaro"": 1}",0.2,True
+indicator,2,morphology -> interactions/vitality,unmarked -> unmarked,0.30833333333333335,3,2,19.333333333333332,14.0,"{""Panorama, Via dei Colli"": 2, ""Scuola Elementare, Via Frizzi"": 1}",0.2,True
+indicator,2,local_solutions -> local_solutions,unmarked -> unmarked,0.28888888888888886,3,2,19.333333333333332,10.0,"{""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 2}",0.2,True
+indicator,2,rarity -> environment,unmarked -> unmarked,0.2833333333333333,2,2,4.5,4.5,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1}",0.2,True
+indicator,2,authenticity -> participative_governance,unmarked -> unmarked,0.2777777777777778,2,2,18.0,18.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1}",0.2,True
+indicator,2,distinctiveness -> legibility,unmarked -> unmarked,0.2777777777777778,2,2,12.0,12.0,"{""Simen x Paoli"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,fascination -> carrying_capacity,unmarked -> unmarked,0.2777777777777778,3,2,9.333333333333334,12.0,"{""Navegna Lago"": 2, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,legibility -> coherence,unmarked -> unmarked,0.2777777777777778,2,2,25.5,25.5,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,legibility -> openness_enclosure,unmarked -> unmarked,0.2777777777777778,2,2,6.5,6.5,"{""Mulino San Martino / Parco Vicolo della Roggia"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,interactions/vitality -> authenticity,unmarked -> unmarked,0.2708333333333333,3,2,4.0,6.0,"{""Via Mezzaro"": 2, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,crossability -> morphology,unmarked -> unmarked,0.26666666666666666,3,2,4.0,4.0,"{""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 2}",0.2,True
+indicator,2,scale -> distinctiveness,unmarked -> unmarked,0.25555555555555554,2,2,16.5,16.5,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,mystery -> fascination,unmarked -> unmarked,0.23333333333333334,2,2,3.0,3.0,"{""Navegna Lago"": 1, ""After Via dei Colli / Before Mezzaro"": 1}",0.2,True
+indicator,2,safety_comfort -> complexity,unmarked -> unmarked,0.225,2,2,3.5,3.5,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,continuity -> fascination,unmarked -> unmarked,0.2222222222222222,2,2,8.5,8.5,"{""Simen x Paoli"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,continuity -> openness_enclosure,unmarked -> unmarked,0.21777777777777776,3,2,56.0,30.0,"{""Ponte Navegna"": 2, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,ambience -> cultural heritage,unmarked -> unmarked,0.21666666666666667,2,2,10.5,10.5,"{""Via Mezzaro"": 1, ""Chiesa, Via San Gottardo"": 1}",0.2,True
+indicator,2,distinctiveness -> mystery,unmarked -> unmarked,0.21666666666666667,2,2,2.0,2.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,crossability -> mystery,unmarked -> unmarked,0.20833333333333331,2,2,4.0,4.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,Mixed_uses -> ambience,unmarked -> unmarked,0.19166666666666665,2,2,7.0,7.0,"{""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,cultural identity -> authenticity,unmarked -> unmarked,0.1875,2,2,3.0,3.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,coherence -> mystery,unmarked -> unmarked,0.17777777777777776,2,2,4.5,4.5,"{""Ponte Navegna"": 1, ""Chiesa, Via San Gottardo"": 1}",0.2,True
+indicator,2,continuity -> local_solutions,unmarked -> unmarked,0.17777777777777776,2,2,24.0,24.0,"{""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,local_solutions -> authenticity,unmarked -> unmarked,0.17777777777777776,2,2,5.0,5.0,"{""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,local_solutions -> coherence,unmarked -> unmarked,0.17777777777777776,2,2,24.0,24.0,"{""Via Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,Mixed_uses -> carrying_capacity,unmarked -> unmarked,0.16666666666666666,2,2,31.0,31.0,"{""Navegna Lago"": 1, ""Simen x Paoli"": 1}",0.2,True
+indicator,2,compatibility -> authenticity,unmarked -> unmarked,0.16666666666666666,2,2,6.5,6.5,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,fascination -> nature,unmarked -> unmarked,0.1611111111111111,2,2,0.0,0.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,authenticity -> beauty,unmarked -> unmarked,0.13333333333333333,2,2,68.0,68.0,"{""Via Mezzaro"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,beauty -> legibility,unmarked -> unmarked,0.13333333333333333,2,2,3.0,3.0,"{""After Via dei Colli / Before Mezzaro"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,complexity -> crossability,unmarked -> unmarked,0.13333333333333333,2,2,2.0,2.0,"{""Ponte Navegna"": 1, ""Panorama, Via dei Colli"": 1}",0.2,True
+indicator,2,crossability -> fascination,unmarked -> unmarked,0.125,2,2,11.0,11.0,"{""Navegna Lago"": 1, ""Ponte Navegna"": 1}",0.2,True
+indicator,2,beauty -> fascination,unmarked -> unmarked,0.12222222222222222,2,2,4.5,4.5,"{""After Via dei Colli / Before Mezzaro"": 1, ""Ponte Navegna"": 1}",0.2,True

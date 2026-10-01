@@ -1,0 +1,13 @@
+{
+  "VoilaConfiguration": {
+    "strip_sources": true,
+    "show_tracebacks": false,
+    "theme": "light",
+    "template": "lab",
+    "show_margins": false
+  },
+  "VoilaExecutor": {
+    "timeout": 300,
+    "show_tracebacks": false
+  }
+}
